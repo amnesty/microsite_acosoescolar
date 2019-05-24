@@ -45,7 +45,7 @@ $caso = 6;
 						</div>
 						<p class="black">Todas las aulas deberían ser un espacios libres de acoso escolar  para los alumnos y alumnas. Señaliza tu aula como “aula libre de acoso escolar” con este cartel. <br><br/>Descárgate gratis el cartel y colócalo en un lugar visible para que alumnos y alumnas sepan que en su aula no hay espacio para el acoso.</p>
 					</div>
-					<img src="images/carteles-interior.png">
+					<img src="<?php echo URL_SITE; ?>images/carteles-interior.png">
 				</div>
 				<div class="columna-formulario bcolor-white-section">
 					<div class="cont-formulario-right">	

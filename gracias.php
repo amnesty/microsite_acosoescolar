@@ -37,7 +37,7 @@ $caso = 7;
 	<section class="modulo-compartir bcolor-white-section text-center">
 		<div class="grid-container-medium modulo-compartir-inside grid">
 			<h2 class="black">Comparte</h2>
-			<img src="images/icono-compartir.png">
+			<img src="<?php echo URL_SITE; ?>images/icono-compartir.png">
 			<p class="p-small black">Ahora puedes llegar mucho más lejos y multiplicar tu acción: comparte esta petición en tus redes sociales o en tus grupos de Whatsapp para que más personas de tu entorno firmen la campaña. <br><br/> Cuántos más seamos más fuerza tendremos para llenar los colegios de pupitres libres de acoso escolar.</p>
 			<div class="container-botones-compartir">
 				<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $casos[$caso][2]?> comp FB" data-e_l="<?php echo $casos[$caso][2]?> comp FB" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" class="white bcolor-green-section facebook facebook-share send-piwik-event" href="#">Comparte en facebook</a>

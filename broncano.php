@@ -44,7 +44,7 @@ $caso = 5;
 <?php include ("includes/social_share_interior.php"); ?>
 							</div>
 						</div>
-						<p class="black">David Broncano se animó a conocerlo de la mano de (nombre de los chavales).</p>
+						<p class="black">David Broncano se animó a conocerlo de la mano de Paula, Celia y Raúl. Paula va a 3º de la ESO, Celia a 1º de la ESO y Raúl a 2º de bachillerato.</p>
 						<div class="grid-video">
 							<div class="video-responsive">
 								<iframe src="https://www.youtube.com/embed/9Eb3AU1zV38" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

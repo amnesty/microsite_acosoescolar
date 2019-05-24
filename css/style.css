@@ -55,6 +55,12 @@ a {
 	padding: 0;
 }
 
+input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none !important;
+}
 
 /*Estilos generales*/
 
@@ -316,7 +322,7 @@ footer p:nth-of-type(2n){
 	display: none;
 }
 
-.index .header-social{
+.index .header-social {
 	display: flex;
 	align-items: center;
 }

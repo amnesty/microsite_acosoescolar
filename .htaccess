@@ -1,42 +1,21 @@
-# BEGIN GZIP
-<ifmodule mod_deflate.c>
-AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
-AddOutputFilterByType DEFLATE image/x-icon
-AddOutputFilterByType DEFLATE image/gif
-AddOutputFilterByType DEFLATE image/png
-AddOutputFilterByType DEFLATE image/jpeg
-</ifmodule>
-# END GZIP
-
-# Habilita el módulo de Reescritura
 RewriteEngine On
 
-# Codificacion
-AddDefaultCharset UTF-8
-php_value default_charset UTF-8
+#Testing Estresarte
+#RewriteBase /amnistia/microsite_acosoescolar
 
-# Server Local estrés y Amnistía
-#RewriteBase /microsite_acosoescolar/
-
-# Testing Estresarte
-#RewriteBase /amnistia/microsite_acosoescolar/
-
-
-RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+#RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
 #RewriteRule ^ /%1.html [R=302,L,NE]
 
 
 # Add trailing slash
-RewriteCond %{REQUEST_URI} !(/$|\.)
-RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
+# RewriteCond %{REQUEST_URI} !(/$|\.)
+# RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
 
 # Permite que los archivos o directorios que existen sean mostrados directamente
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^([^/]+)/$ $1.php [L]
-
-
 
 
 <ifmodule mod_expires.c>

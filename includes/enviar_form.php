@@ -26,7 +26,7 @@ if( $_POST['guardar_form'] ) {
 	$origen = $_POST['origen'];
 	$campanya = $_POST['campanya'];
 	$caso = $_POST['caso'];
-	$segmentacion = $casos[$caso][1]; //pupitreslibres; pupitreslibres_carmen; pupitreslibres_eme; pupitreslibres_joseluis;pupitreslibres_violeta;pupitreslibres_broncano
+	$segmentacion = $casos[$caso][1]; //pupitres_libres; pupitres_libres_carmen; pupitres_libres_eme; pupitres_libres_joseluis; pupitres_libres_violeta; pupitres_libres_broncano
 
 		// IP
 	$ip = $_SERVER['REMOTE_ADDR'];

@@ -12,8 +12,12 @@ $share_fb = 'Yo ya he firmado para llenar todos los colegios de #PupitresLibres 
 $share_tw = 'Una recogida de firmas de @amnistiaespana bien necesaria para conseguir #PupitresLibres de acoso escolar. ¡Me ha encantado!';
 $share_wh = 'Yo ya he firmado para lograr que todos los colegios se llenen de #PupitresLibres de acoso escolar. ¡Súmate tú también!';
 
-//Asignar el caso --> Gracias
-$caso = 7;
+$caso = $_GET['caso'];
+if($caso) {
+    $segmentacion_origen = "?origen=pupitres_libres&caso=".$casos[$caso][2];
+}else {
+    $segmentacion_origen = "?origen=pupitres_libres";
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -36,7 +40,7 @@ $caso = 7;
 	<!--Modulo donativo-->
 	<section class="modulo-donativo bcolor-white-section">
 		<div class="grid-container-small grid container-donativo">
-			<img src="images/pulseras-donativo.png" alt="pulseras de apoyo: coles libres de acoso escolar">
+			<img src="<?php echo URL_SITE; ?>images/pulseras-donativo.png" alt="pulseras de apoyo: coles libres de acoso escolar">
 			<div class="right">
 				<p class="p-small black"><span>Haz un donativo para ayudarnos a seguir con nuestro trabajo y te enviamos a casa esta pulsera</span>: la podrás regalar a los niños, niñas y adolescentes de tu entorno para concienciarles a que colaboren a crear un cole libre de acoso escolar.</p>
 				<a target="_blank" class="bcolor-yellow black" href="<?php echo URL_DONA; ?>">Haz un donativo</a>

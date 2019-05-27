@@ -2,7 +2,7 @@
 include_once ("includes/config.php"); 
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
-$page_title = SITE_TITLE . SEPARATOR . SITE_NAME ;
+$page_title = 'Descargas: Decálogo' . SEPARATOR . SITE_TITLE . SEPARATOR . SITE_NAME ;
 $description = SITE_DESCRIPTION;
 $img_fb_url = URL_SITE . 'images/social/compartir-fb-caso-eme.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-eme.jpg';

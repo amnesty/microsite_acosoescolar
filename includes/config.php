@@ -21,15 +21,15 @@ error_reporting(0);
 if ( strpos ( $_SERVER['SERVER_NAME'], "estresarte.com" )) {
 	define("URL_SITE", "https://testing.estresarte.com/amnistia/microsite_acosoescolar/"); // Servidor Testing estrés
 } elseif ( strpos ( $_SERVER['SERVER_NAME'], "amnistia.bit" )) {
-	define("URL_SITE", "http://dev.amnistia.bit/microsite_acosoescolar/"); // Servidor Local estrés
+	define("URL_SITE", "http://dev.amnistia.bit/microsite_acosoescolar_local/"); // Servidor Local estrés
 } elseif ( $_SERVER['SERVER_NAME'] == "localhost" && $_SERVER["SERVER_PORT"] == '8080' ) {
-	define("URL_SITE", "http://localhost:8080/acoso_escolar/"); // Local amnistia 2
+	define("URL_SITE", "http://localhost:8080/acoso-escolar/"); // Local amnistia 2
 	$tabla = 'firmas';
 }elseif ( $_SERVER['SERVER_NAME'] == "localhost" ) {
-	define("URL_SITE", "http://localhost:8088/acoso_escolar/"); // Local amnistia
+	define("URL_SITE", "http://localhost:8088/acoso-escolar/"); // Local amnistia
 	$tabla = 'test_firmas';
 } else {
-	define("URL_SITE", "https://www.es.amnesty.org/acoso_escolar/"); // Producción Amnistía
+	define("URL_SITE", "https://pupitreslibres.org"); // Producción Amnistía
 	$tabla = 'firmas';
 }
 
@@ -39,14 +39,14 @@ if ( strpos ( $_SERVER['SERVER_NAME'], "estresarte.com" )) {
 
 //Para calcular el valor, es necesario sabnerl el nº de firmas que se llevan en cada momento, meidante una consulta SQL a la base de datos.
 //Luego se calucla esto: data-progress-percent =   (nº firmas / NUM_FIRMAS_TOTAL )*100
-define ("NUM_FIRMAS_TOTAL", "5000");
+define ("NUM_FIRMAS_TOTAL", "30000");
 
 //Definde Constates Site Name Y Site Title
 define("SITE_NAME", "Amnistía Internacional");
 define("SITE_TITLE", "Pupitres Libres de Acoso Escolar");
 define("SITE_DESCRIPTION", "Miles de niños, niñas y adolescentes en España sufren acoso escolar. Un problema invisible que les impide vivir su infancia como debe ser.");
 define("SEPARATOR", " - ");
-define("EVENT_CATEGORY", "acosoescolar");
+define("EVENT_CATEGORY", "Acosoescolar");
 
 
 //Trackeado de enlaces con UTM de Google Analytics
@@ -55,8 +55,8 @@ define ("TRACK_TW_UTM", "?utm_source=twitter&utm_campaign=comp&utm_medium=social
 define ("TRACK_WH_UTM", "?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=AcosoEscolar&utm_content=Web_petition-acoso-escolar-2019-whatsapp");
 
 //URLs conversión Amnistía
-define ("URL_DONA", "https://www.es.amnesty.org/");
-define ("URL_SOCIO", "https://www.es.amnesty.org/");
+define ("URL_DONA", "https://crm.es.amnesty.org/haz-un-donativo/acoso-escolar/");
+define ("URL_SOCIO", "https://crm.es.amnesty.org/unete-a-amnistia/acoso-escolar/");
 
 
 //RECIBE PARAMETROS DE CAMPAÑAS GOOGLE Y FACEBOOK. LOS ASIGNAMOS A LA SESSION RESPECTIVAMENTE PARA NO PERDERLOS
@@ -78,8 +78,8 @@ $casos = array(
 	4 => array('Violeta', 'pupitres_libres_violeta', 'violeta'),
 	5 => array('Broncano', 'pupitres_libres_broncano', 'broncano'),
 	6 => array('Descargas', 'pupitres_libres_descargas', 'descargas'),
-	7 => array('Gracias', 'pupitres_libres_gracias', 'gracias'),
-	8 => array('Gracias Descargas', 'pupitres_libres_gracias_descargas', 'gracias_descargas'),
+	//7 => array('Gracias', 'pupitres_libres_gracias', 'gracias'),
+	//8 => array('Gracias Descargas', 'pupitres_libres_gracias_descargas', 'gracias_descargas'),
 );
 
 //POR SI NO SE SELECCIONA NINGÚN CASO

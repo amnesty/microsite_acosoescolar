@@ -26,7 +26,7 @@ $caso = 0;
 	<main>
 		<!--Modulo cabecera-->
 		<section class="modulo-home">
-			<img src="images/cabecera_mobile_300.jpg" alt="<?php echo $site_title;?>">
+			<img src="<?php echo URL_SITE; ?>images/cabecera_mobile_300.jpg" alt="<?php echo $site_title;?>">
 			<div class="modulo-home-inside grid-container-big grid">
 				<div class="cont-formulario">
 <?php include_once ("includes/firma-form.php"); ?>
@@ -58,7 +58,7 @@ $caso = 0;
 				<div class="owl-carousel grid-container-big">
 					<!--Testimonio-1-->
 					<div class="item testimonios-container">
-						  <img src="images/carmen.jpg" class="imagen-testimonio" alt="Caso Carmen" style="width:100%">
+						  <img src="<?php echo URL_SITE; ?>images/carmen.jpg" class="imagen-testimonio" alt="Caso Carmen" style="width:100%">
 						  <div class="testimonios-container-info">
 						  	<h3 class="white text-center">Carmen</h3>
 						  	<p class="white text-center">Una madre que no se quedó de brazos cruzados</p>
@@ -68,7 +68,7 @@ $caso = 0;
 
 					<!--Testimonio-2-->
 					<div class="item testimonios-container">
-					  <img src="images/eme.jpg" class="imagen-testimonio" alt="Caso Eme" style="width:100%">
+					  <img src="<?php echo URL_SITE; ?>images/eme.jpg" class="imagen-testimonio" alt="Caso Eme" style="width:100%">
 					  <div class="testimonios-container-info">
 					  	<h3 class="white text-center">Eme</h3>
 					  	<p class="white text-center">Sufrió acoso escolar durante 4 años</p>
@@ -78,7 +78,7 @@ $caso = 0;
 
 					<!--Testimonio-3-->
 					<div class="item testimonios-container">
-					  <img src="images/joseluis.jpg" class="imagen-testimonio" alt="Caso José Luis" style="width:100%">
+					  <img src="<?php echo URL_SITE; ?>images/joseluis.jpg" class="imagen-testimonio" alt="Caso José Luis" style="width:100%">
 					  <div class="testimonios-container-info">
 					  	<h3 class="white text-center">José Luis</h3>
 					  	<p class="white text-center">Un profesor frente al acoso escolar</p>
@@ -88,7 +88,7 @@ $caso = 0;
 
 					<!--Testimonio-4-->
 					<div class="item testimonios-container">
-					  <img src="images/violeta.jpg" class="imagen-testimonio" alt="Caso Violeta" style="width:100%">
+					  <img src="<?php echo URL_SITE; ?>images/violeta.jpg" class="imagen-testimonio" alt="Caso Violeta" style="width:100%">
 					  <div class="testimonios-container-info">
 					  	<h3 class="white text-center">Violeta</h3>
 					  	<p class="white text-center">Trabaja contra el acoso escolar dentro de su cole</p>
@@ -104,7 +104,7 @@ $caso = 0;
 		<section class="modulo-broncano-home center">
 			<div class="grid-container-small grid">
 				<h2 class="white">¿Qué es la ayuda entre iguales?</h2>
-				<p class="p-big white">El presentador David Broncano ha querido saber qué es la ayuda entre iguales y ha entrevistado a varios chicos y chicas que forman parte de esta iniciativa para prevenir y combatir el acoso escolar, en un colegio en El Escorial. Porque él también sabe que es posible tener pupitres libres de acoso escolar en los colegios.</p>
+				<p class="p-big white">El presentador David Broncano ha querido saber qué es la ayuda entre iguales y ha entrevistado a varios chicos y chicas que forman parte de esta iniciativa para prevenir y combatir el acoso escolar, en el colegio IES Miguel Catalán de Coslada, en Madrid. Porque él también sabe que es posible tener pupitres libres de acoso escolar en los colegios.</p>
 				<a class="btn-modulo bcolor-yellow black" href="<?php echo URL_SITE; ?>broncano">Ver entrevista</a>
 			</div>
 		</section>
@@ -117,31 +117,31 @@ $caso = 0;
 				No es una cosa de críos: los adultos tenemos que actuar para garantizar a los/as menores espacios libres de acoso escolar.
 				<div class="container-propuestas flex">
 					<div class="container-propuestas-col">
-						<img src="images/propuesta-1.jpg" alt="sistema de denuncias">
+						<img src="<?php echo URL_SITE; ?>images/propuesta-1.jpg" alt="sistema de denuncias">
 						<h3>Sistema de <br> denuncias</h3>
 						<p class="p-small black">Rápido, eficaz y hecho a medida de niños, niñas y adolescentes, para que se sientan escuchados, seguros y protegidos.</p>
 					</div>
 
 					<div class="container-propuestas-col">
-						<img src="images/propuesta-3.jpg" alt="formación del profesorado">
+						<img src="<?php echo URL_SITE; ?>images/propuesta-3.jpg" alt="formación del profesorado">
 						<h3>Formación del<br>profesorado</h3>
 						<p class="p-small black">Para que sepan detectar e intervenir en los casos de acoso escolar en las aulas.</p>
 					</div>
 
 					<div class="container-propuestas-col">
-						<img src="images/propuesta-2.jpg" alt="ayuda entre iguales">
+						<img src="<?php echo URL_SITE; ?>images/propuesta-2.jpg" alt="ayuda entre iguales">
 						<h3>Ayuda entre<br>iguales</h3>
 						<p class="p-small black">Para que sepan detectar e intervenir en los casos de acoso escolar en las aulas.</p>
 					</div>
 
 					<div class="container-propuestas-col">
-						<img src="images/propuesta-4.jpg" alt="reconocerlo en casa">
+						<img src="<?php echo URL_SITE; ?>images/propuesta-4.jpg" alt="reconocerlo en casa">
 						<h3>Reconocerlo<br>en casa</h3>
 						<p class="p-small black">Ayudar a padres y madres a reconocer cuándo sus hijos sufren acoso y que sepan cómo actuar.</p>
 					</div>
 
 					<div class="container-propuestas-col">
-						<img src="images/propuesta-5.jpg" alt="datos reales">
+						<img src="<?php echo URL_SITE; ?>images/propuesta-5.jpg" alt="datos reales">
 						<h3>Datos<br>reales</h3>
 						<p class="p-small black">Que se recojan de manera adecuada datos para conocer la realidad del acoso escolar en España.</p>
 					</div>
@@ -178,7 +178,7 @@ $caso = 0;
 						<p class="p-small black">Haz un donativo para ayudarnos a seguir con nuestro trabajo de denuncia y te enviamos a casa esta pulsera: la podrás regalar a los niños, niñas y adolescentes de tu entorno para concienciarles a que colaboren a crear un cole libre de acoso escolar.</p>
 						<a target="_blank" href="<?php echo URL_DONA; ?>" class="bcolor-yellow black" >Haz un donativo</a>
 					</div>
-					<img src="images/pulseras-apoyo.png" alt="pulseras de apoyo:coles libres de acoso escolar">
+					<img src="<?php echo URL_SITE; ?>images/pulseras-apoyo.png" alt="pulseras de apoyo:coles libres de acoso escolar">
 				</div>
 			</div>
 		</section>

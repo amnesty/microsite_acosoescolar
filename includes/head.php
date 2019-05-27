@@ -16,8 +16,8 @@
 	<meta property="og:description" content="<?php echo $share_fb; ?>" />
 <?php } else { ?>
 	<meta property="og:description" content="<?php echo $description; ?>" />
-<?php } ?>    
-    <meta property="og:image" content="<?php echo $img_fb_url; ?>" />
+<?php } ?>
+	<meta property="og:image" content="<?php echo $img_fb_url; ?>" />
     <meta property="og:image:width" content="968" />
     <meta property="og:image:height" content="506" />
     <meta property="og:type" content="website" />
@@ -45,6 +45,7 @@
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="<?php echo URL_SITE; ?>js/cookielawinfo.js"></script>
 	<script type="text/javascript" src="<?php echo URL_SITE; ?>js/init.js"></script>
+	<script type="text/javascript" src="<?php echo URL_SITE; ?>js/firma_form.js"></script>
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

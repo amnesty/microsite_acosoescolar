@@ -1,16 +1,6 @@
-/*
-var player = {};
-var videoOnReady = 'showVideo';
-
-// Load the YouTube API. For some reason it's required to load it like this
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-*/
-
 $(document).ready(function() {
 
+  //.owl-carousel Home
   $(".owl-carousel").owlCarousel({
     items: 3,
     dots: true,
@@ -51,55 +41,31 @@ $(document).ready(function() {
 
   });
 
-
   // on page load...
-    moveProgressBar();
-    // on browser resize...
-    $(window).resize(function() {
-        moveProgressBar();
-    });
-
-    //BARRA DE FIRMAS
-    function moveProgressBar() {
-        var getPercent = ($('.progress-wrap-firmas').data('progress-percent') / 100);
-        var getProgressWrapWidth = $('.progress-wrap-firmas').width();
-        var progressTotal = getPercent * getProgressWrapWidth;
-        var animationLength = 2500;
-
-        // on page load, animate percentage bar to data percentage length
-        // .stop() used to prevent animation queueing
-        $('.progress-bar-firmas').stop().animate({left: progressTotal}, animationLength);
-    }
-
-  //$('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
-
-/*
+  moveProgressBar();
+  // on browser resize...
   $(window).resize(function() {
-    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
-
-    if($(window).width() > 800) {
-      $('.boton-fijo.btn-firma').css('display', 'none');
-    }else {
-      $('.boton-fijo.btn-firma').css('display', 'block');
-    }
+      moveProgressBar();
   });
-*/
+
+  //BARRA DE FIRMAS
+  function moveProgressBar() {
+      var getPercent = ($('.progress-wrap-firmas').data('progress-percent') / 100);
+      var getProgressWrapWidth = $('.progress-wrap-firmas').width();
+      var progressTotal = getPercent * getProgressWrapWidth;
+      var animationLength = 2500;
+
+      // on page load, animate percentage bar to data percentage length
+      // .stop() used to prevent animation queueing
+      $('.progress-bar-firmas').stop().animate({left: progressTotal}, animationLength);
+  }
+
 
   //AVISO COOKIES
   cli_show_cookiebar({
     settings: '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#869817","border_on":true,"button_1_button_colour":"#869817","button_1_button_hover":"#869817","button_1_link_colour":"#fff","button_1_as_button":true,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#869817","button_2_as_button":false,"header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"top","scroll_close":false,"scroll_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#838383","show_once_yn":false,"show_once":"10000"}'
   });
 
-/*
-  $('#videoModal').on('show.bs.modal', function (e) {
-    if(!isMobile) {
-      playVideo();
-    }
-  });
-  $('#videoModal').on('hidden.bs.modal', function (e) {
-    stopVideo();
-  })
-*/
 
   var capaHeaderHeight = $("header").innerHeight();
   $('.btn-fijo-firma, header .btn .firmar').bind('click', function(event) {
@@ -123,129 +89,48 @@ $(document).ready(function() {
 
 });//.document ready
 
+
+$(window).scroll(function(event) {
+
+  //BOTON FIRMA MOSTRAR/OCULTAR
+
 /*
-if (existeCookie('cookieAlert3')) {
-  videoOnReady = "hideVideo";
-}else {
-  var param_video = getParameterByName('video');
-  if (is_novideo (param_video) ) {
-      videoOnReady = "hideVideo";
-  }else {
-      videoOnReady = "hideVideo";
+  if (  !$("body").hasClass("gracias") && !$("body").hasClass("descargas")  ) {
+
+    if($(window).width() <= 620) {
+
+      console.log('menor');
+      if($(window).scrollTop() == ($(document).height() - $(window).height())) {
+        $('.btn-fijo-firma').css('display', 'none');
+      }else {
+        console.log('mayor');
+        $('.btn-fijo-firma').css('display', 'block');
+      }
+
+    }
+
   }
-}
 */
 
+  //CREAR COOKIE AL HACER SCROLL
+  if(!existeCookie('cookieAlert3')) {
+      crearCookie('cookieAlert3', '1', 365, '.es.amnesty.org');
+      crearCookie('cookieAlert3', '1', 365, ''); //localhost
+  }
+  //CERRAR AVISO COOKIES AL HACER SCROLL
+  jQuery('#cookie-law-info-bar').fadeOut();
 
-// FUNCION SENG GOOGLE EVENT
+});//.scroll.function.event
+
+
+/*****************
+****FUNCTIONS*****
+*****************/
+
+// FUNCION SEND PIWIK EVENT
 function piwik_event(category, action, label) {
     _paq.push(['trackEvent', category, action, label]);
 }
-
-
-// Setup a callback for the YouTube api to attach video event handlers
-
-/*
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('video', {
-    //height: '703',
-    //width: '1250',
-    videoId: 'pXMzICtx9iA',
-    playerVars: {
-       'autoplay': 0,
-       'controls': 0,
-       'rel': 0,
-       'showinfo': 0,
-       'loop': 0,
-       'enablejsapi': 1,
-       'modestbranding': 1,
-       'disablekb': 0,
-       'iv_load_policy': 3
-      },
-    events: {
-      'onReady': videoOnReady,
-        'onStateChange': onPlayerStateChange
-      }
-  });
-}
-
-function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.ENDED) {
-    $('#videoModal').modal('hide');
-  }
-}
-function showVideo() {
-  $('#videoModal').modal('show');
-}
-function hideVideo() {
-  $('#videoModal').modal('hide');
-}
-function playVideo() {
-  player.playVideo();
-}
-function stopVideo() {
-  player.stopVideo();
-}
-*/
-
-var lastScrollTop = 0;
-$(window).scroll(function(event) {
-
-  //MOSTRAR/OCULTAR BACKGROUND CABECERA
-  /*
-  var destacadaHomeHeight = $("section.modulo-home").innerHeight();
-  var capaHeaderHeight = $("header").innerHeight();
-
-  if ($(window).scrollTop() > destacadaHomeHeight - capaHeaderHeight) {
-    $('header').addClass('gold');
-  }else {
-    $('header').removeClass('gold');
-  }
-  */
-
-  //MOSTRAR/OCULTAR CABECERA
-  /*
-  var wintop = $(window).scrollTop(), winheight = $(window).height();
-    var docheight = $(document).height();
-    var totalScroll = (wintop/(docheight-winheight))*100;
-    $(".KW_progressBar").css("width",totalScroll+"%");
-
-    if($(window).width() <= 768){
-    var st = $(this).scrollTop();
-    if (st > lastScrollTop && st > 0){
-       // downscroll code
-       $('header').css('display','none');
-    } else {
-      // upscroll code
-      $('header').css('display','block');
-    }
-    lastScrollTop = st;
-  }else {
-    $('header').css('display','block');
-  }
-  */
-
-  //BOTON FIRMA MOSTRAR/OCULTAR
-  if($(window).width() <= 800) {
-    if($(window).scrollTop() == ($(document).height() - $(window).height())) {
-      $('.boton-fijo.btn-firma').css('display', 'none');
-    }else {
-      $('.boton-fijo.btn-firma').css('display', 'block');
-    }
-  }
-
-  //CREAR COOKIE AL HACER SCROLL
-
-
-    if(!existeCookie('cookieAlert3')) {
-        crearCookie('cookieAlert3', '1', 365, '.es.amnesty.org');
-        crearCookie('cookieAlert3', '1', 365, ''); //localhost
-    }
-    //CERRAR AVISO COOKIES AL HACER SCROLL
-    jQuery('#cookie-law-info-bar').fadeOut();
-
-
-});
 
 function getParameterByName(name, url) {
     if (!url) {
@@ -259,13 +144,6 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-function is_novideo( param ) {
-    if (param == 'novideo') {
-        return true;
-    } else {
-        return false;
-    }
-}
 
 function crearCookie(name,value,days,domain) {
     //console.log("--> Nombre: "+name+" Valor: "+value+" Dias: "+days);
@@ -278,7 +156,6 @@ function crearCookie(name,value,days,domain) {
     document.cookie = name+"="+value+expires+"; path=/; domain="+domain;
     //document.cookie = name+"="+value+expires+"; path=/";
 }
-
 
 function existeCookie(name) {
   var nameEQ = name + "=";
@@ -293,137 +170,6 @@ function existeCookie(name) {
     }
   }
   return false;
-}
-
-
-function validarFormFirma(f) {
-  $(".error").css('visibility', 'hidden');
-  error = 0;
-
-  //VALIDAR DATOS PERSONALES
-  if (f.nombre.value.search(/\S/) == -1 || f.nombre.value.length < 3) {
-
-    $(".error.nombre").html("El nombre no puede estar vacío.");
-    $(".error.nombre").css('visibility', 'visible');
-
-    f.nombre.focus();
-    error = 1;
-  }
-
-  if(f.apellidos.value.search(/\S/) == -1 || f.apellidos.value.length < 3) {
-
-    $(".error.apellidos").html("Los apellidos no pueden estar vacíos.");
-    $(".error.apellidos").css('visibility', 'visible');
-
-    f.apellidos.focus();
-    error = 1;
-  }
-
-  if(f.email.value.search(/\S/) == -1) {
-
-    $(".error.email").html("El email no puede estar vacío.");
-    $(".error.email").css('visibility', 'visible');
-
-    f.email.focus();
-    error = 1;
-  }else if (f.email.value.search(/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.[a-z]{2,}$/i) == -1) {
-
-    $(".error.email").html("Email con formato incorrecto.");
-    $(".error.email").css('visibility', 'visible');
-
-    f.email.focus()
-    error = 1;
-  }
-
-  if(f.telefono.value.search(/\S/) == 0) {
-    if(f.telefono.value.length != 9 || isNaN(f.telefono.value)) {
-      $(".error.telefono").html("Teléfono con formato incorrecto.");
-      $(".error.telefono").css('visibility', 'visible');
-
-      f.telefono.focus()
-      error = 1;
-    }
-  }
-
-  if(f.pais.value == 0) {
-    $(".error.pais").html("Selecciona el país de residencia.");
-    $(".error.pais").css('visibility', 'visible');
-
-    f.pais.focus()
-    error = 1;
-  }
-
-  $('.open-popup-link').magnificPopup({
-    type:'inline',
-    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-  });
-
-  if(error == 1){
-    //MOSTRAR LOS ERRORES
-    return false;
-  }else{
-
-    var check = $("#check_reminder");
-    var check_reminder_modal = $('#ai-accion-firma__masinfo_reminder');
-
-    if(!check.prop("checked") && check_reminder_modal.length > 0 && check_reminder_modal.data("shown") != 1) { // in case that exist an reminder_modal div
-            $.magnificPopup.open({
-                items: {
-                    src: '#test-popup'
-
-                },
-                removalDelay: 50,
-                callbacks: {
-                  open: function() {
-                    var popup = this;
-                    var input = popup.currItem.inlineElement.find("input");
-                    var check = $("#ai-accion-firma__masinfo");
-                    input.prop("checked", false);
-                    check.prop("checked", false);
-                    $('#test-popup').data("shown", 1);
-                    _paq.push(["trackEvent", "popup_check", "mostrado"]);
-
-                    input.change(function(){
-                        var check = $("#ai-accion-firma__masinfo");
-                        check.prop("checked", true);
-                        $("#check_reminder").prop("checked", true);
-                        document.formFirma.submit();
-                    });
-                  },
-                  beforeClose: function(){
-                        document.formFirma.submit();
-                  }
-                },
-                midClick: true
-            });
-            event.stopImmediatePropagation();
-            return false;
-    }
-
-    $('#btnEnviar').css('display', 'none');
-    $('#btnEnviando').css('display', 'block');
-    //$('#formFirma').submit();
-    document.formFirma.submit();
-    return true;
-  }
-}
-
-function soloNumeros(e){
-    tecla = (document.all) ? e.keyCode : e.which;
-    if((tecla < 48 || tecla > 57) && (tecla != 32 && tecla != 43 && tecla != 8 && tecla != 0)){
-        return false;
-    }
-}
-
-function ocultarTel(valor) {
-  if(valor == '1198') {
-    $('input[name=telefono]').removeAttr('disabled');
-    $('input[name=telefono]').removeAttr('readonly');
-  }else {
-    $('input[name=telefono]').attr('disabled', 'disabled');
-    $('input[name=telefono]').attr('readonly', 'readonly');
-    $('input[name=telefono]').val('');
-  }
 }
 
 function callbackOwl(event) {

@@ -2,7 +2,7 @@
 include_once ("includes/config.php"); 
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
-$page_title = SITE_TITLE . SEPARATOR . SITE_NAME ;
+$page_title = 'Descargas: Hoja de firmas' . SEPARATOR .SITE_TITLE . SEPARATOR . SITE_NAME ;
 $description = SITE_DESCRIPTION;
 $img_fb_url = URL_SITE . 'images/social/compartir-fb-caso-eme.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-eme.jpg';
@@ -31,7 +31,7 @@ $caso = 6;
 				<div class="columna-contenido bcolor-grey-section">
 					<div class="columna-contenido-inside">
 						<div class="titulo-redes-container">
-							<h2 class="black m-width">Hoja de firma para el colegio</h2>
+							<h2 class="black m-width">Hoja de firmas para el colegio</h2>
 							<div class="compartir-columna-contenido">
 								<p class="green p-super-small">Comparte</p>
 <?php include ("includes/social_share_interior.php"); ?>

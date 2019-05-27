@@ -12,8 +12,12 @@ $share_fb = 'Yo ya he firmado para llenar todos los colegios de #PupitresLibres 
 $share_tw = 'Una recogida de firmas de @amnistiaespana bien necesaria para conseguir #PupitresLibres de acoso escolar. ¡Me ha encantado!';
 $share_wh = 'Yo ya he firmado para lograr que todos los colegios se llenen de #PupitresLibres de acoso escolar. ¡Súmate tú también!';
 
-//Asignar el caso --> Gracias
-$caso = 7;
+$caso = $_GET['caso'];
+if($caso) {
+    $segmentacion_origen = "?origen=pupitres_libres&caso=".$casos[$caso][2];
+}else {
+    $segmentacion_origen = "?origen=pupitres_libres";
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -24,6 +28,10 @@ $caso = 7;
 <!--Header-->
 <?php include_once ("includes/header.php"); ?>
 
+<?php
+    // Pixels de retargetting de FB, Google, Twitter,...
+    //include_once("includes/pixelretgracias.php");
+?>
 <main>
 	<!--Modulo gracias-->
 	<section class="modulo-gracias bcolor-grey-section text-center">
@@ -61,5 +69,65 @@ if($isMobile) {
 
 <?php include_once ("includes/footer.php"); ?>
 
+<?php /*
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var nuevoFirmante = <?php echo $_GET['s']; ?>;
+        var casoPiwik = <?php echo $_GET['caso']; ?>;
+        //console.log('nuevoFirmante: '+nuevoFirmante);
+        var _paq = _paq || [];
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(["setCookieDomain", "*.es.amnesty.org"]);
+        _paq.push(["setDomains", ["*.es.amnesty.org",]]);
+        // definimos custom events para cada caso
+        if (casoPiwik == 1) {
+            _paq.push(['setCustomDimension', 4, 'Antonio']);
+        } else if (casoPiwik == 2) {
+            _paq.push(['setCustomDimension', 4, 'Rosa']);
+        } else if (casoPiwik == 3) {
+            _paq.push(['setCustomDimension', 4, 'Jaime']);
+        } else if (casoPiwik == 4) {
+            _paq.push(['setCustomDimension', 4, 'Soledad']);
+        } else {
+            _paq.push(['setCustomDimension', 4, 'general']);
+        }
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        // marcamos los goals, tanto geneŕicos como especiales de la micro
+        _paq.push(["trackGoal", 6]);
+        _paq.push(["trackGoal", 33]);
+        _paq.push(['trackGoal', 45]);
+        if (nuevoFirmante == 1) {
+            _paq.push(["trackGoal", 57]);
+        } else if (nuevoFirmante == 2) {
+            _paq.push(["trackGoal", 8]);
+            _paq.push(["trackGoal", 59]);
+        } else {
+            _paq.push(["trackGoal", 58]);
+        }
+        // Lanzamos eventos para cada caso
+        if (casoPiwik == 1) {
+            _paq.push(['trackEvent', 'FormJusticia', 'Gracias Antonio']);
+        } else if (casoPiwik == 2) {
+            _paq.push(['trackEvent', 'FormJusticia', 'Gracias Rosa']);
+        } else if (casoPiwik == 3) {
+            _paq.push(['trackEvent', 'FormJusticia', 'Gracias Jaime']);
+        } else if (casoPiwik == 4) {
+            _paq.push(['trackEvent', 'FormJusticia', 'Gracias Soledad']);
+        } else {
+            _paq.push(['trackEvent', 'FormJusticia', 'Gracias general']);
+        }
+        (function() {
+            var u="//estadisticas.es.amnesty.org/piwik/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <noscript><p><img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+
+*/ ?>
 </body>
 </html>

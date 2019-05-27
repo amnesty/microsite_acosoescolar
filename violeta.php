@@ -2,7 +2,7 @@
 include_once ("includes/config.php"); 
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
-$page_title = SITE_TITLE . SEPARATOR . SITE_NAME ;
+$page_title = 'Violeta trabaja contra el acoso escolar dentro de su cole' . SEPARATOR . SITE_TITLE . SEPARATOR . SITE_NAME ;
 $description = SITE_DESCRIPTION;
 $img_fb_url = URL_SITE . 'images/compartir-fb-caso-violeta.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-violeta.jpg';

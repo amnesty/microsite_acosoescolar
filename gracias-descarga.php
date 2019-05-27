@@ -7,12 +7,17 @@ $description = SITE_DESCRIPTION;
 $img_fb_url = URL_SITE . 'images/social/compartir-fb-generico.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-generico.jpg';
 $page_url = URL_SITE . 'gracias-descarga';
-//Asignar el caso --> Gracias
+
 $share_fb = 'Yo ya he firmado para llenar todos los colegios de #PupitresLibres de acoso escolar.';
 $share_tw = 'Una recogida de firmas de @amnistiaespana bien necesaria para conseguir #PupitresLibres de acoso escolar. ¡Me ha encantado!';
 $share_wh = 'Yo ya he firmado para lograr que todos los colegios se llenen de #PupitresLibres de acoso escolar. ¡Súmate tú también!';
 
-$caso = 8;
+$caso = $_GET['caso'];
+if($caso) {
+    $segmentacion_origen = "?origen=pupitres_libres&caso=".$casos[$caso][2];
+}else {
+    $segmentacion_origen = "?origen=pupitres_libres";
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -20,7 +25,10 @@ $caso = 8;
 <body class="gracias gracias-descarga">
 <!--Header-->
 <?php include_once ("includes/header.php"); ?>
-
+<?php
+    // Pixels de retargetting de FB, Google, Twitter,...
+    //include("includes/pixelretgracias.php");
+?>
 <main>
 	<!--Modulo gracias-->
 	<section class="modulo-gracias bcolor-grey-section text-center">

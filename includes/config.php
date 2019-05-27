@@ -21,12 +21,12 @@ error_reporting(0);
 if ( strpos ( $_SERVER['SERVER_NAME'], "estresarte.com" )) {
 	define("URL_SITE", "https://testing.estresarte.com/amnistia/microsite_acosoescolar/"); // Servidor Testing estrés
 } elseif ( strpos ( $_SERVER['SERVER_NAME'], "amnistia.bit" )) {
-	define("URL_SITE", "http://dev.amnistia.bit/microsite_acosoescolar/"); // Servidor Local estrés
+	define("URL_SITE", "http://dev.amnistia.bit/microsite_acosoescolar_local/"); // Servidor Local estrés
 } elseif ( $_SERVER['SERVER_NAME'] == "localhost" && $_SERVER["SERVER_PORT"] == '8080' ) {
-	define("URL_SITE", "http://localhost:8080/acoso_escolar/"); // Local amnistia 2
+	define("URL_SITE", "http://localhost:8080/acoso-escolar/"); // Local amnistia 2
 	$tabla = 'firmas';
 }elseif ( $_SERVER['SERVER_NAME'] == "localhost" ) {
-	define("URL_SITE", "http://localhost:8088/acoso_escolar/"); // Local amnistia
+	define("URL_SITE", "http://localhost:8088/acoso-escolar/"); // Local amnistia
 	$tabla = 'test_firmas';
 } else {
 	define("URL_SITE", "https://pupitreslibres.org"); // Producción Amnistía
@@ -78,8 +78,8 @@ $casos = array(
 	4 => array('Violeta', 'pupitres_libres_violeta', 'violeta'),
 	5 => array('Broncano', 'pupitres_libres_broncano', 'broncano'),
 	6 => array('Descargas', 'pupitres_libres_descargas', 'descargas'), 
-	7 => array('Gracias', 'pupitres_libres_gracias', 'gracias'),
-	8 => array('Gracias Descargas', 'pupitres_libres_gracias_descargas', 'gracias_descargas'),   
+	//7 => array('Gracias', 'pupitres_libres_gracias', 'gracias'),
+	//8 => array('Gracias Descargas', 'pupitres_libres_gracias_descargas', 'gracias_descargas'),   
 );
 
 //POR SI NO SE SELECCIONA NINGÚN CASO

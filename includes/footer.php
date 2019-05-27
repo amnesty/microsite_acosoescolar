@@ -5,9 +5,24 @@
   </div>
 </footer>
   <!--Boton Firma-->
+
+<?php
+if (strpos( $_SERVER['PHP_SELF'], 'gracias')) {
+?>  
+  <a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="gracias boton footer firma" data-e_l="gracias boton footer firma" href="#firma" class="btn-fijo-firma boton black bcolor-yellow send-piwik-event">Firma</a>
+<?php
+} else {
+?>
   <a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?=$casos[$caso][2]?> boton footer firma" data-e_l="<?=$casos[$caso][2]?> boton footer firma" href="#firma" class="btn-fijo-firma boton black bcolor-yellow send-piwik-event">Firma</a>
+<?php
+} 
+?>
 
 <?php include_once ("includes/cookies.php"); ?>
+
+<?php //include ("includes/pixelret.php"); ?>
+
+<?php /*
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
@@ -28,3 +43,4 @@
 </script>
 <noscript><p><img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
+*/ ?>

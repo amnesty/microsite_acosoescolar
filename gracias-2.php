@@ -12,8 +12,12 @@ $share_fb = 'Yo ya he firmado para llenar todos los colegios de #PupitresLibres 
 $share_tw = 'Una recogida de firmas de @amnistiaespana bien necesaria para conseguir #PupitresLibres de acoso escolar. ¡Me ha encantado!';
 $share_wh = 'Yo ya he firmado para lograr que todos los colegios se llenen de #PupitresLibres de acoso escolar. ¡Súmate tú también!';
 
-//Asignar el caso --> Gracias
-$caso = 7;
+$caso = $_GET['caso'];
+if($caso) {
+    $segmentacion_origen = "?origen=pupitres_libres&caso=".$casos[$caso][2];
+}else {
+    $segmentacion_origen = "?origen=pupitres_libres";
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">

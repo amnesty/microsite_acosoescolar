@@ -70,16 +70,16 @@ if(isset($_GET['utm_campaign'])) {
 //Array con los casos para usarse en la segmentación y/o en la página de gracias si hace falta saber por quién han firmado.
 //Tambíen se usa para los eventos de analítica
 //Añada Home, Descargas, Broncano y Gracias.
-$casos = array( 
-	0 => array('Home', 'pupitreslibres', 'home'), 
-	1 => array('Carmen', 'pupitreslibres_carmen', 'carmen'), 
-	2 => array('Eme', 'pupitreslibres_eme', 'eme'), 
-	3 => array('José Luis', 'pupitreslibres_joseluis', 'joseluis'), 
-	4 => array('Violeta', 'pupitreslibres_violeta', 'violeta'),
-	5 => array('Broncano', 'pupitreslibres_broncano', 'broncano'),
-	6 => array('Descargas', 'pupitreslibres_descargas', 'descargas'), 
-	7 => array('Gracias', 'pupitreslibres_gracias', 'gracias'),
-	8 => array('Gracias Descargas', 'pupitreslibres_gracias_descargas', 'gracias_descargas'),   
+$casos = array(
+	0 => array('Home', 'pupitres_libres', 'home'),
+	1 => array('Carmen', 'pupitres_libres_carmen', 'carmen'),
+	2 => array('Eme', 'pupitres_libres_eme', 'eme'),
+	3 => array('José Luis', 'pupitres_libres_joseluis', 'joseluis'),
+	4 => array('Violeta', 'pupitres_libres_violeta', 'violeta'),
+	5 => array('Broncano', 'pupitres_libres_broncano', 'broncano'),
+	6 => array('Descargas', 'pupitres_libres_descargas', 'descargas'),
+	7 => array('Gracias', 'pupitres_libres_gracias', 'gracias'),
+	8 => array('Gracias Descargas', 'pupitres_libres_gracias_descargas', 'gracias_descargas'),
 );
 
 //POR SI NO SE SELECCIONA NINGÚN CASO

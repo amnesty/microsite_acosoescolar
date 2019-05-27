@@ -2,7 +2,7 @@
 /*
 [VERSIÓN 2017]
 
-Se cambió: where accion = 'acosoescolar' por: where accion LIKE 'acosoescolar%'
+Se cambió: where accion = 'pupitres_libres' por: where accion LIKE 'pupitres_libres%'
 porque tendremos la segementación por casos por quién firman
 */?>
 
@@ -40,7 +40,7 @@ include_once('config.php');
 
 include_once('connect.php');
 
-$query =  "SELECT COUNT(*) AS contador FROM $tabla where accion LIKE 'acosoescolar%'";
+$query =  "SELECT COUNT(*) AS contador FROM $tabla where accion LIKE 'pupitres_libres%'";
 $result = mysqli_query( $id_connect, $query );
 $obj = mysqli_fetch_object($result);
 $num_firmas = $obj->contador;
@@ -191,17 +191,36 @@ $progress_percent = (($num_firmas_bd_bak+$num_firmas) / $num_firmas_total)*100;
         <p class="error pais">No has introducido este dato.</p>
       </div>
 
+			<div id="check_privacidad" class="form-check" style="display: none;">
+				<label class="form-check-label">
+					<input type="checkbox" id="check_reminder" checked="true" class="form-check-input" name="politica">
+					<span>Deseo más información de Amnistía Internacional.</span>
+				</label>
+			</div>
       <div class="form-check">
         <label class="form-check-label">
           <span>Al participar aceptas la <a target="_blank" href="https://www.es.amnesty.org/politica-de-privacidad"  title="Política de privacidad">Política de Privacidad</a></span>
         </label>
       </div>
-
+			<!-- POPUP Politica-->
+			<div id="test-popup" class="modal-dialog mfp-hide white-popup mfp-hide" role="document">
+					<div class="modal-content">
+						<div class="modal-body form-check">
+							<p>Si quieres recibir otras acciones como esta e información adicional de Amnistía Internacional, recuerda marcar la casilla verde antes de enviar tu firma</p>
+						</div>
+						<div class="modal-footer">
+									<label class="ai-accion-firma__check bigger form-check">
+											<input type="checkbox" id="ai-accion-firma__masinfo_reminder" class="form-check-input"/>
+											Quiero recibir acciones para cambiar el mundo
+									</label>
+						</div>
+					</div>
+			</div>
+			<!--END POPUP Politica -->
       <div class="box-check">
         <button id="btnEnviar" type="button" class="btn-formulario boton bcolor-yellow black"  onclick="validarFormFirma(document.forms['formFirma']);">Firma</button>
         <button id="btnEnviando" type="button" class="btn-formulario" style="display:none;">Enviando...</button>
       </div>
-
       <input type="hidden" name="guardar_form" value="1">
       <input type="hidden" name="origen" value="<?php echo $origen; ?>">
       <input type="hidden" name="campanya" value="<?php echo $campaign; ?>">
@@ -209,4 +228,3 @@ $progress_percent = (($num_firmas_bd_bak+$num_firmas) / $num_firmas_total)*100;
     </form>
   </div><!--.cont-formulario int-->
   <!--.Formulario Firma FIN-->
-

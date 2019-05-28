@@ -3,12 +3,12 @@ include_once ("includes/config.php");
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'Descargas: Cartel Aulas Libres' . SEPARATOR . SITE_TITLE . SEPARATOR . SITE_NAME ;
-$description = SITE_DESCRIPTION;
-$img_fb_url = URL_SITE . 'images/social/compartir-fb-caso-eme.jpg';
-$img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-eme.jpg';
+$description = 'Todas las aulas deberían ser un espacios libres de acoso escolar  para los alumnos y alumnas. Señaliza tu aula como “aula libre de acoso escolar” con este cartel.';
+$img_fb_url = URL_SITE . 'images/social/compartir-fb-descargas.jpg';
+$img_tw_url = URL_SITE . 'images/social/compartir-tw-descargas.jpg';
 $page_url = URL_SITE . 'descargas-cartel';
 
-$share_fb = '¿Son posibles aulas libres de acoso escolar? ¡Sí! Descárgate este cartel y señaliza tu aula como "aula libre de acoso escolar" y haz que la campaña #PupitresLibres de acoso escolar de @amnistiaespana llegue a todos los colegios e institutos. ';
+$share_fb = 'Descárgate este cartel para señalar que tu aula está libre de bullying. ¡Logremos #PupitresLibres de acoso escolar!.';
 $share_tw = '¿Aulas libres de #acosoescolar? Claro que sí! Señalízalas con este cartel descargable y haz que la campaña #PupitresLibres de @amnistiaespana llegue a todos los colegios e institutos.';
 $share_wh = '¿Aulas libres de #acosoescolar? Claro que sí! Señalízalas con este cartel descargable y haz que la campaña #PupitresLibres de @amnistiaespana llegue a todos los colegios e institutos.';
 
@@ -45,7 +45,7 @@ $caso = 6;
 						</div>
 						<p class="black">Todas las aulas deberían ser un espacios libres de acoso escolar  para los alumnos y alumnas. Señaliza tu aula como “aula libre de acoso escolar” con este cartel. <br><br/>Descárgate gratis el cartel y colócalo en un lugar visible para que alumnos y alumnas sepan que en su aula no hay espacio para el acoso.</p>
 					</div>
-					<img src="<?php echo URL_SITE; ?>images/carteles-interior.png">
+					<img src="<?php echo URL_SITE; ?>images/carteles-interior.png" alt="cartel #PupitresLibres de acoso escolar">
 				</div>
 				<div class="columna-formulario bcolor-white-section">
 					<div class="cont-formulario-right">	

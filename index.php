@@ -22,6 +22,9 @@ $caso = 0;
 </head>
 
 <body class="index">
+<div class="KW_progressContainer">
+	<div class="KW_progressBar"></div>
+</div>
 <?php include_once ("includes/header.php"); ?>
 	<main>
 		<!--Modulo cabecera-->
@@ -147,7 +150,7 @@ $caso = 0;
 					</div>
 				</div>
 				<p class="p-big black">Si quieres saber más sobre las propuestas de Amnistía Internacional descarga gratis el informe completo.</p>
-				<a target="_blank" href="https://www.es.amnesty.org/" class="btn-propuestas-descarga bcolor-yellow black" target="_blank">Descargar</a>
+				<a href="<?php echo URL_SITE; ?>descargas-informe" class="btn-propuestas-descarga bcolor-yellow black">Descargar</a>
 			</div>
 		</section>
 

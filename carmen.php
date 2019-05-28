@@ -3,7 +3,7 @@ include_once ("includes/config.php");
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'Carmen, una madre que no se quedó de brazos cruzados' . SEPARATOR . SITE_TITLE . SEPARATOR . SITE_NAME ;
-$description = SITE_DESCRIPTION;
+$description = 'El hijo de Carmen, Juan, sufrió acoso escolar durante un curso entero. Ante la mirada impasible de sus compañeros y compañeras, Juan no dejó de recibir insultos, empujones, agresiones físicas durante un curso escolar entero';
 $img_fb_url = URL_SITE . 'images/social/compartir-fb-caso-carmen.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-carmen.jpg';
 $page_url = URL_SITE . 'carmen';

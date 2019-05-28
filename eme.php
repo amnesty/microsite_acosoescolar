@@ -3,7 +3,7 @@ include_once ("includes/config.php");
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'Eme sufrió acoso escolar durante 4 años' . SEPARATOR . SITE_TITLE . SEPARATOR . SITE_NAME ;
-$description = SITE_DESCRIPTION;
+$description = 'Eme no era consciente de que lo que le llevaba viviendo 4 años en su nuevo cole era acoso escolar. Primero empezaron a insultarla, lo siguiente fue pegarla. Al final, un día, una compañera la tiró por las escaleras del colegio.';
 $img_fb_url = URL_SITE . 'images/social/compartir-fb-caso-eme.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-eme.jpg';
 $page_url = URL_SITE . 'eme';

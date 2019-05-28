@@ -3,7 +3,7 @@ include_once ("includes/config.php");
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'David Broncano ha querido saber qué es la ayuda entre iguales' . SEPARATOR .SITE_TITLE . SEPARATOR . SITE_NAME ;
-$description = SITE_DESCRIPTION;
+$description = 'El presentador David Broncano ha querido saber qué es la ayuda entre iguales y ha entrevistado a varios chicos y chicas que forman parte de esta iniciativa para prevenir y combatir el acoso escolar, en un colegio en El Escorial.';
 $img_fb_url = URL_SITE . 'images/compartir-fb-caso-violeta.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-violeta.jpg';
 $page_url = URL_SITE . 'broncano';
@@ -50,7 +50,7 @@ $caso = 5;
 								<iframe src="https://www.youtube.com/embed/9Eb3AU1zV38" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 						</div>
-						<p class="black">El presentador David Broncano ha querido saber qué es la ayuda entre iguales y ha entrevistado a varios chicos y chicas que forman parte de esta iniciativa para prevenir y combatir el acoso escolar, en un colegio en El Escorial. Porque él también sabe que es posible tener pupitres libres de acoso escolar en los colegios.
+						<p class="black">El presentador David Broncano ha querido saber qué es la ayuda entre iguales y ha entrevistado a varios chicos y chicas que forman parte de esta iniciativa para prevenir y combatir el acoso escolar en el colegio IES Miguel Catalán de Coslada, en Madrid. Porque él también sabe que es posible tener pupitres libres de acoso escolar en los colegios.
 						</p>
 					</div>
 				</div>

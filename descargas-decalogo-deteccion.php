@@ -3,13 +3,13 @@ include_once ("includes/config.php");
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'Descargas: Decálogo' . SEPARATOR . SITE_TITLE . SEPARATOR . SITE_NAME ;
-$description = SITE_DESCRIPTION;
-$img_fb_url = URL_SITE . 'images/social/compartir-fb-caso-eme.jpg';
-$img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-eme.jpg';
+$description = 'Detectar el acoso escolar es clave para poder prevenir e intervenir a tiempo. A veces, pequeñas señales pasan desapercibidas y podrían ser el comienzo de una relación de acoso escolar.';
+$img_fb_url = URL_SITE . 'images/social/compartir-fb-descargas.jpg';
+$img_tw_url = URL_SITE . 'images/social/compartir-tw-descargas.jpg';
 $page_url = URL_SITE . 'descargas-decalogo-deteccion';
 //Asignar el caso
 
-$share_fb = 'Detectar el acoso escolar es clave para poder prevenir e intervenir a tiempo. Descárgate este decálogo para detectarlo y haz que la campaña #PupitresLibres de acoso escolar de @amnsitiaespana llegue a todos los colegios e institutos.';
+$share_fb = 'Descárgate este decálogo para detectar el bullying y compártelo para lograr #PupitresLibres de acoso escolar.';
 $share_tw = '¿Sabes detectar el #acosoescolar? Con este decálogo de @amnistiaespana de la campaña #PupitresLibres podrás detectarlo y atajarlo. Descárgatelo gratis aquí 👇';
 $share_wh = '¿Sabes detectar el #acosoescolar? Con este decálogo de @amnistiaespana de la campaña #PupitresLibres podrás detectarlo y atajarlo. Descárgatelo gratis aquí 👇';
 

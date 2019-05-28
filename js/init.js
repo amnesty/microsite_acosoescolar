@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  setColumnaFormularioHeight();
+
   //.owl-carousel Home
   $(".owl-carousel").owlCarousel({
     items: 3,
@@ -46,6 +48,7 @@ $(document).ready(function() {
   // on browser resize...
   $(window).resize(function() {
       moveProgressBar();
+      setColumnaFormularioHeight();
   });
 
   //BARRA DE FIRMAS
@@ -91,26 +94,11 @@ $(document).ready(function() {
 
 
 $(window).scroll(function(event) {
-
-  //BOTON FIRMA MOSTRAR/OCULTAR
-
-/*
-  if (  !$("body").hasClass("gracias") && !$("body").hasClass("descargas")  ) {
-
-    if($(window).width() <= 620) {
-
-      console.log('menor');
-      if($(window).scrollTop() == ($(document).height() - $(window).height())) {
-        $('.btn-fijo-firma').css('display', 'none');
-      }else {
-        console.log('mayor');
-        $('.btn-fijo-firma').css('display', 'block');
-      }
-
-    }
-
-  }
-*/
+  
+  var wintop = $(window).scrollTop(), winheight = $(window).height();
+  var docheight = $(document).height();
+  var totalScroll = (wintop/(docheight-winheight))*100;
+  $(".KW_progressBar").css("width",totalScroll+"%");
 
   //CREAR COOKIE AL HACER SCROLL
   if(!existeCookie('cookieAlert3')) {
@@ -120,16 +108,29 @@ $(window).scroll(function(event) {
   //CERRAR AVISO COOKIES AL HACER SCROLL
   jQuery('#cookie-law-info-bar').fadeOut();
 
+
+
+
 });//.scroll.function.event
 
 
 /*****************
 ****FUNCTIONS*****
 *****************/
-
 // FUNCION SEND PIWIK EVENT
 function piwik_event(category, action, label) {
     _paq.push(['trackEvent', category, action, label]);
+}
+
+
+function setColumnaFormularioHeight () {
+
+  if (window.matchMedia('(max-width: 980px)').matches) { 
+    $(".columna-formulario").css ({ 'height': '100%' });
+
+  } else {
+    $(".columna-formulario").css ({ 'height': $(".columna-contenido").innerHeight() +'px' });
+  }
 }
 
 function getParameterByName(name, url) {

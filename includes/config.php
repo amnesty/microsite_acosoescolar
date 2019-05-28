@@ -29,7 +29,7 @@ if ( strpos ( $_SERVER['SERVER_NAME'], "estresarte.com" )) {
 	define("URL_SITE", "http://localhost:8088/acoso-escolar/"); // Local amnistia
 	$tabla = 'test_firmas';
 } else {
-	define("URL_SITE", "https://pupitreslibres.org"); // Producción Amnistía
+	define("URL_SITE", "https://www.es.amnesty.org/acoso-escolar/"); // Producción Amnistía
 	$tabla = 'firmas';
 }
 

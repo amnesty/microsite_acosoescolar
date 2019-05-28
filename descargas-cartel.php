@@ -12,9 +12,9 @@ $share_fb = 'Descárgate este cartel para señalar que tu aula está libre de bu
 $share_tw = '¿Aulas libres de #acosoescolar? ¡Claro que sí! Señalízalas con este cartel descargable y haz que la campaña #PupitresLibres de @amnistiaespana llegue a todos los colegios e institutos.';
 $share_wh = '¿Aulas libres de #acosoescolar? ¡Claro que sí! Señalízalas con este cartel descargable y haz que la campaña #PupitresLibres de @amnistiaespana llegue a todos los colegios e institutos.';
 
-$url_share_fb = $page_url . TRACK_FB_UTM;
-$url_share_tw = $page_url . TRACK_TW_UTM;
-$url_share_wh = $page_url . TRACK_WH_UTM;
+$url_share_fb = 'http://bit.ly/2I2Kb7S';
+$url_share_tw = 'http://bit.ly/2HZvC4S';
+$url_share_wh = 'http://bit.ly/2HZwqqq';
 
 //Asignar el caso
 $caso = 6;

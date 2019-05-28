@@ -206,12 +206,12 @@ $progress_percent = (($num_firmas_bd_bak+$num_firmas) / $num_firmas_total)*100;
 			<div id="test-popup" class="modal-dialog mfp-hide white-popup mfp-hide" role="document">
 					<div class="modal-content">
 						<div class="modal-body form-check">
-							<p>Si quieres recibir otras acciones como esta e información adicional de Amnistía Internacional, recuerda marcar la casilla verde antes de enviar tu firma</p>
+							<p>Si quieres recibir otras acciones como esta e información adicional de Amnistía Internacional recuerda marcar la siguiente casilla antes de enviar tu firma.</p>
 						</div>
 						<div class="modal-footer">
 									<label class="ai-accion-firma__check bigger form-check">
 											<input type="checkbox" id="ai-accion-firma__masinfo_reminder" class="form-check-input"/>
-											Quiero recibir acciones para cambiar el mundo
+											<span>Quiero recibir acciones para cambiar el mundo</span>
 									</label>
 						</div>
 					</div>
@@ -219,7 +219,7 @@ $progress_percent = (($num_firmas_bd_bak+$num_firmas) / $num_firmas_total)*100;
 			<!--END POPUP Politica -->
       <div class="box-check">
         <button id="btnEnviar" type="button" class="btn-formulario boton bcolor-yellow black"  onclick="validarFormFirma(document.forms['formFirma']);">Firma</button>
-        <button id="btnEnviando" type="button" class="btn-formulario" style="display:none;">Enviando...</button>
+        <button id="btnEnviando" type="button" class="btn-formulario boton" style="display:none;">Enviando...</button>
       </div>
       <input type="hidden" name="guardar_form" value="1">
       <input type="hidden" name="origen" value="<?php echo $origen; ?>">

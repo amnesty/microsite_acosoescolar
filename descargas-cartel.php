@@ -9,8 +9,8 @@ $img_tw_url = URL_SITE . 'images/social/compartir-tw-descargas.jpg';
 $page_url = URL_SITE . 'descargas-cartel';
 
 $share_fb = 'Descárgate este cartel para señalar que tu aula está libre de bullying. ¡Logremos #PupitresLibres de acoso escolar!.';
-$share_tw = '¿Aulas libres de #acosoescolar? Claro que sí! Señalízalas con este cartel descargable y haz que la campaña #PupitresLibres de @amnistiaespana llegue a todos los colegios e institutos.';
-$share_wh = '¿Aulas libres de #acosoescolar? Claro que sí! Señalízalas con este cartel descargable y haz que la campaña #PupitresLibres de @amnistiaespana llegue a todos los colegios e institutos.';
+$share_tw = '¿Aulas libres de #acosoescolar? ¡Claro que sí! Señalízalas con este cartel descargable y haz que la campaña #PupitresLibres de @amnistiaespana llegue a todos los colegios e institutos.';
+$share_wh = '¿Aulas libres de #acosoescolar? ¡Claro que sí! Señalízalas con este cartel descargable y haz que la campaña #PupitresLibres de @amnistiaespana llegue a todos los colegios e institutos.';
 
 //Asignar el caso
 $caso = 6;

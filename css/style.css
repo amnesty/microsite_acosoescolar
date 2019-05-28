@@ -722,6 +722,42 @@ footer p:nth-of-type(2n){
 	padding-top: 5px;
 }
 
+/*Test popup politica*/
+#test-popup.white-popup {
+    padding: 30px 40px 20px 20px;
+    width: auto;
+    max-width: 760px;
+}
+#test-popup, #test-popup .form-check{
+	font-size: 16px;
+	line-height: 21px;
+}
+
+#test-popup .modal-footer label {
+	margin-top: 15px;
+}
+
+#test-popup .modal-footer label input {
+	width: 18px;
+	height: 18px;
+}
+
+#test-popup .modal-footer label span{
+	position: absolute;
+	top: 3px;
+	margin-left: 5px;
+}
+
+#test-popup .mfp-close {
+    width: 50px;
+    height: 50px;
+    top: -5px;
+    right: 0px;
+    opacity: 0.85;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .formulario-firma .form-check span a{
 	color: #000000;
 	font-weight: bold;
@@ -1853,6 +1889,12 @@ footer p:nth-of-type(2n){
 
 
 @media(max-width: 768px){
+
+
+#test-popup, #test-popup .form-check {
+    font-size: 14px;
+    line-height: 19px;
+}	
 
 .container-acciones a, .container-acciones-2 a {
     max-width: 255px;

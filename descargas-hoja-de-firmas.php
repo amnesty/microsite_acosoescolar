@@ -10,8 +10,8 @@ $page_url = URL_SITE . 'descargas-hoja-de-firmas';
 //Asignar el caso
 
 $share_fb = 'Descárgate esta hoja y recoge firmas para lograr #PupitresLibres de acoso escolar en tu colegio o instituto.';
-$share_tw = 'Tú puedes organizar una recogida de apoyos en colegios o institutos para exigir con @amnistiaespana #PupitresLibres de #acosoescolar. ¡Descárgate esta hoja de firmas y que empiece la recogida de firmas! ';
-$share_wh = 'Tú puedes organizar una recogida de apoyos en colegios o institutos para exigir con @amnistiaespana #PupitresLibres de #acosoescolar. ¡Descárgate esta hoja de firmas y que empiece la recogida de firmas! ';
+$share_tw = 'Tú puedes organizar una recogida de apoyos en colegios o institutos para exigir con @amnistiaespana #PupitresLibres de #acosoescolar. ¡Descárgate esta hoja de firmas y que empiece la recogida de firmas!';
+$share_wh = 'Tú puedes organizar una recogida de apoyos en colegios o institutos para exigir con @amnistiaespana #PupitresLibres de #acosoescolar. ¡Descárgate esta hoja de firmas y que empiece la recogida de firmas!';
 
 $caso = 6;
 ?>

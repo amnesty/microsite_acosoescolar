@@ -6,9 +6,9 @@ Se cambió: where accion = 'pupitres_libres' por: where accion LIKE 'pupitres_li
 porque tendremos la segementación por casos por quién firman
 */?>
 
-		<link rel="stylesheet" href="js/magnific-popup/dist/magnific-popup.css">
-		<script type="text/javascript" src="js/magnific-popup/dist/jquery.magnific-popup.js"></script>
-		<script type="text/javascript" src="js/politica.js"></script>
+		<link rel="stylesheet" href="<?php echo URL_SITE; ?>js/magnific-popup/dist/magnific-popup.css">
+		<script type="text/javascript" src="<?php echo URL_SITE; ?>js/magnific-popup/dist/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="<?php echo URL_SITE; ?>js/politica.js"></script>
 
 
 <?php
@@ -209,7 +209,7 @@ $progress_percent = (($num_firmas_bd_bak+$num_firmas) / $num_firmas_total)*100;
 							<p>Si quieres recibir otras acciones como esta e información adicional de Amnistía Internacional recuerda marcar la siguiente casilla antes de enviar tu firma.</p>
 						</div>
 						<div class="modal-footer">
-									<label class="ai-accion-firma__check bigger form-check">
+									<label class="ai-accion-firma__check bigger form-check-label">
 											<input type="checkbox" id="ai-accion-firma__masinfo_reminder" class="form-check-input"/>
 											<span>Quiero recibir acciones para cambiar el mundo</span>
 									</label>

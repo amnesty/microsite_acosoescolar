@@ -12,6 +12,10 @@ $share_fb = 'La historia de Carmen y su hijo Juan ha hecho que firme la campaña
 $share_tw = 'La historia de Carmen y su hijo Juan ha hecho que firme la campaña #PupitresLibres de acoso escolar de @amnistiaespana ¡Conócela!';
 $share_wh = 'La historia de Carmen y su hijo Juan me han hecho firmar la campaña de Amnistía Internacional para lograr llenar todos los colegios de #PupitresLibres de acoso escolar ¡Conócela!';
 
+$url_share_fb = $page_url . TRACK_FB_UTM;
+$url_share_tw = $page_url . TRACK_TW_UTM;
+$url_share_wh = $page_url . TRACK_WH_UTM;
+
 //Asignar el caso
 $caso = 1;
 ?>

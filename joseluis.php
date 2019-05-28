@@ -12,6 +12,10 @@ $share_fb = 'Profesores como José Luis son los que necesitamos para lograr #Pup
 $share_tw = 'Profesores como José Luis son los que necesitamos para lograr #PupitresLibres de acoso escolar. Yo ya he firmado la campaña de @amnistiaespana para lograrlo.';
 $share_wh = 'Profesores como José Luis son los que necesitamos para lograr #PupitresLibres de acoso escolar. Yo ya he firmado la campaña de Amnistía Internacional para lograrlo.';
 
+$url_share_fb = $page_url . TRACK_FB_UTM;
+$url_share_tw = $page_url . TRACK_TW_UTM;
+$url_share_wh = $page_url . TRACK_WH_UTM;
+
 //Asignar el caso
 $caso = 3;
 ?>

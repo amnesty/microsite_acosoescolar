@@ -12,6 +12,10 @@ $share_fb = 'Yo ya he firmado para llenar todos los colegios de #PupitresLibres 
 $share_tw = 'Una recogida de firmas de @amnistiaespana bien necesaria para conseguir #PupitresLibres de acoso escolar. ¡Me ha encantado!';
 $share_wh = 'Yo ya he firmado para lograr que todos los colegios se llenen de #PupitresLibres de acoso escolar. ¡Súmate tú también!';
 
+$url_share_fb = $page_url . TRACK_FB_UTM;
+$url_share_tw = $page_url . TRACK_TW_UTM;
+$url_share_wh = $page_url . TRACK_WH_UTM;
+
 //Asignar el caso
 $caso = 0;
 ?>

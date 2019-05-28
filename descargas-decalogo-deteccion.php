@@ -13,6 +13,10 @@ $share_fb = 'Descárgate este decálogo para detectar el bullying y compártelo 
 $share_tw = '¿Sabes detectar el #acosoescolar? Con este decálogo de @amnistiaespana de la campaña #PupitresLibres podrás detectarlo y atajarlo. Descárgatelo gratis aquí 👇';
 $share_wh = '¿Sabes detectar el #acosoescolar? Con este decálogo de @amnistiaespana de la campaña #PupitresLibres podrás detectarlo y atajarlo. Descárgatelo gratis aquí 👇';
 
+$url_share_fb = $page_url . TRACK_FB_UTM;
+$url_share_tw = $page_url . TRACK_TW_UTM;
+$url_share_wh = $page_url . TRACK_WH_UTM;
+
 $caso = 6;
 ?>
 <!DOCTYPE html>

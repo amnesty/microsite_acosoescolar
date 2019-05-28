@@ -12,6 +12,10 @@ $share_fb = 'Descárgate gratis este informe sobre bullying en España y descubr
 $share_tw = 'Consigue gratis nuestro informe sobre #acosoescolar en España.';
 $share_wh = 'Consigue gratis nuestro informe sobre #acosoescolar en España.';
 
+$url_share_fb = $page_url . TRACK_FB_UTM;
+$url_share_tw = $page_url . TRACK_TW_UTM;
+$url_share_wh = $page_url . TRACK_WH_UTM;
+
 //Asignar el caso
 $caso = 6;
 ?>

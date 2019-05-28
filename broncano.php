@@ -12,6 +12,10 @@ $share_fb = 'David Broncano quiere #PupitresLibres de acoso escolar en los coleg
 $share_tw = 'No te pierdas este vídeo de Broncano entrevistando a chicos y chicas que luchan por #PupitresLibres de acoso escolar en su colegio de mano de @amnistiaespana. A mí me ha encantado. ';
 $share_wh = '¿Has visto esta entrevista de Broncano a chicos y chicas que luchan contra el acoso escolar en sus colegios? A mí me ha encantado.';
 
+$url_share_fb = $page_url . TRACK_FB_UTM;
+$url_share_tw = $page_url . TRACK_TW_UTM;
+$url_share_wh = $page_url . TRACK_WH_UTM;
+
 //Asignar el caso
 $caso = 5;
 ?>

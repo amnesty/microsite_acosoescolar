@@ -1,5 +1,5 @@
 <?php
-include_once ("includes/config.php"); 
+include_once ("includes/config.php");
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'Descargas: Decálogo' . SEPARATOR . SITE_TITLE . SEPARATOR . SITE_NAME ;
@@ -50,12 +50,13 @@ $caso = 6;
 						<p class="black">Detectar el acoso escolar es clave para poder prevenir e intervenir a tiempo. A veces, pequeñas señales pasan desapercibidas y podrían ser el comienzo de una relación de acoso escolar. <br><br/>Descárgate gratis este decálogo e infórmate de cómo detectar el acoso escolar a tiempo.</p>
 					</div>
 				</div>
-				<div class="columna-formulario bcolor-white-section">
-					<div class="cont-formulario-right">	
-<?php include_once ("includes/descarga-form.php"); ?>
+				<div width="100%" height="100%" class="columna-formulario bcolor-white-section">
+					<div style="height:100%" class="cont-formulario-right">
+						<?php #include_once ("includes/descarga-form.php"); ?>
+ 						<iframe style="height:100%" src="https://pruebacrm.es.amnesty.org/descargas-decalogo-deteccion"></iframe>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</section>
 </main>

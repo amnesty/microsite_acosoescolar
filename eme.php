@@ -12,9 +12,10 @@ $share_fb = 'La historia de Eme ha hecho que firme la campaña #PupitresLibres d
 $share_tw = 'La historia de Eme ha hecho que firme la campaña #PupitresLibres de acoso escolar de @amnistiaespana ¡Conócela!';
 $share_wh = 'La historia de Eme me ha hecho firmar la campaña de Amnistía Internacional para lograr llenar todos los colegios de #PupitresLibres de acoso escolar ¡Conócela!';
 
-$url_share_fb = $page_url . TRACK_FB_UTM;
-$url_share_tw = $page_url . TRACK_TW_UTM;
-$url_share_wh = $page_url . TRACK_WH_UTM;
+$url_share_fb = 'http://bit.ly/2HXY47e';
+$url_share_tw = 'http://bit.ly/2I1hMyV';
+$url_share_wh = 'http://bit.ly/2I0sm9h';
+
 
 //Asignar el caso
 $caso = 2;

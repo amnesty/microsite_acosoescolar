@@ -9,12 +9,17 @@ $img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-violeta.jpg';
 $page_url = URL_SITE . 'broncano';
 
 $share_fb = 'David Broncano quiere #PupitresLibres de acoso escolar en los colegios y por eso ha entrevistado a estos chicos. Yo que tú, no me perdía el vídeo.';
-$share_tw = 'No te pierdas este vídeo de Broncano entrevistando a chicos y chicas que luchan por #PupitresLibres de acoso escolar en su colegio de mano de @amnistiaespana. A mí me ha encantado. ';
+$share_tw = 'No te pierdas este vídeo de Broncano entrevistando a chicos y chicas que luchan por #PupitresLibres de acoso escolar en su colegio de mano de @amnistiaespana. A mí me ha encantado.';
 $share_wh = '¿Has visto esta entrevista de Broncano a chicos y chicas que luchan contra el acoso escolar en sus colegios? A mí me ha encantado.';
 
-$url_share_fb = $page_url . TRACK_FB_UTM;
-$url_share_tw = $page_url . TRACK_TW_UTM;
-$url_share_wh = $page_url . TRACK_WH_UTM;
+$url_share_fb = 'http://bit.ly/2I6ZYlR';
+$url_share_tw = 'http://bit.ly/2I4yywW';
+$url_share_wh = 'http://bit.ly/2I5Sy2k';
+
+ 
+
+
+
 
 //Asignar el caso
 $caso = 5;

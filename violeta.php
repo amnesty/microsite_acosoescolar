@@ -12,9 +12,9 @@ $share_fb = 'Programas de ayuda entre iguales como en el que participa Violeta s
 $share_tw = 'Programas de ayuda entre iguales como en el que participa Violeta son fundamentales para lograr llenar los colegios de #PupitresLibres de acoso escolar. Yo ya he firmado la campaña de @amnistiaespana para conseguirlo. ¡Conócelo!';
 $share_wh = 'Programas de ayuda entre iguales como en el que participa Violeta son fundamentales para lograr llenar los colegios de #PupitresLibres de acoso escolar. Yo ya he firmado la campaña de Amnistía Internacional para conseguirlo. ¡Conócelo!';
 
-$url_share_fb = $page_url . TRACK_FB_UTM;
-$url_share_tw = $page_url . TRACK_TW_UTM;
-$url_share_wh = $page_url . TRACK_WH_UTM;
+$url_share_fb = 'http://bit.ly/2I5UND3';
+$url_share_tw = 'http://bit.ly/2HZvJ0i';
+$url_share_wh = 'http://bit.ly/2I1jtMW';
 
 //Asignar el caso
 $caso = 4;

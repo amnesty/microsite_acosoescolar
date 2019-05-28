@@ -41,7 +41,7 @@ $caso = 5;
 				<div class="columna-contenido bcolor-grey-section">
 					<div class="columna-contenido-inside">
 						<div class="titulo-redes-container">
-							<h2 class="black">¿Qué es la ayuda entre iguales?</h2>
+							<h2 class="black m-width">¿Qué es la ayuda entre iguales?</h2>
 							<div class="compartir-columna-contenido">
 								<p class="green p-super-small">Comparte</p>
 <?php include ("includes/social_share_interior.php"); ?>

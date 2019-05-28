@@ -3,7 +3,7 @@ include_once ("includes/config.php");
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'Carmen, una madre que no se quedó de brazos cruzados' . SEPARATOR . SITE_TITLE . SEPARATOR . SITE_NAME ;
-$description = SITE_DESCRIPTION;
+$description = 'El hijo de Carmen, Juan, sufrió acoso escolar durante un curso entero. Ante la mirada impasible de sus compañeros y compañeras, Juan no dejó de recibir insultos, empujones, agresiones físicas durante un curso escolar entero';
 $img_fb_url = URL_SITE . 'images/social/compartir-fb-caso-carmen.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-carmen.jpg';
 $page_url = URL_SITE . 'carmen';
@@ -11,6 +11,10 @@ $page_url = URL_SITE . 'carmen';
 $share_fb = 'La historia de Carmen y su hijo Juan ha hecho que firme la campaña #PupitresLibres de acoso escolar de Amnistía Internacional. ¡Conócela!';
 $share_tw = 'La historia de Carmen y su hijo Juan ha hecho que firme la campaña #PupitresLibres de acoso escolar de @amnistiaespana ¡Conócela!';
 $share_wh = 'La historia de Carmen y su hijo Juan me han hecho firmar la campaña de Amnistía Internacional para lograr llenar todos los colegios de #PupitresLibres de acoso escolar ¡Conócela!';
+
+$url_share_fb = $page_url . TRACK_FB_UTM;
+$url_share_tw = $page_url . TRACK_TW_UTM;
+$url_share_wh = $page_url . TRACK_WH_UTM;
 
 //Asignar el caso
 $caso = 1;

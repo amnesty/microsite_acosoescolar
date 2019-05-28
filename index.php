@@ -12,6 +12,10 @@ $share_fb = 'Yo ya he firmado para llenar todos los colegios de #PupitresLibres 
 $share_tw = 'Una recogida de firmas de @amnistiaespana bien necesaria para conseguir #PupitresLibres de acoso escolar. ¡Me ha encantado!';
 $share_wh = 'Yo ya he firmado para lograr que todos los colegios se llenen de #PupitresLibres de acoso escolar. ¡Súmate tú también!';
 
+$url_share_fb = $page_url . TRACK_FB_UTM;
+$url_share_tw = $page_url . TRACK_TW_UTM;
+$url_share_wh = $page_url . TRACK_WH_UTM;
+
 //Asignar el caso
 $caso = 0;
 ?>
@@ -22,6 +26,9 @@ $caso = 0;
 </head>
 
 <body class="index">
+<div class="KW_progressContainer">
+	<div class="KW_progressBar"></div>
+</div>
 <?php include_once ("includes/header.php"); ?>
 	<main>
 		<!--Modulo cabecera-->
@@ -147,7 +154,7 @@ $caso = 0;
 					</div>
 				</div>
 				<p class="p-big black">Si quieres saber más sobre las propuestas de Amnistía Internacional descarga gratis el informe completo.</p>
-				<a target="_blank" href="https://www.es.amnesty.org/" class="btn-propuestas-descarga bcolor-yellow black" target="_blank">Descargar</a>
+				<a href="<?php echo URL_SITE; ?>descargas-informe" class="btn-propuestas-descarga bcolor-yellow black">Descargar</a>
 			</div>
 		</section>
 

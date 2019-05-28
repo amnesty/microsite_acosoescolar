@@ -3,7 +3,7 @@ include_once ("includes/config.php");
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'José Luis: un profesor frente al acoso escolar' . SEPARATOR . SITE_TITLE .SITE_TITLE . SEPARATOR . SITE_NAME ;
-$description = SITE_DESCRIPTION;
+$description = 'José Luis es profesor de alemán en un instituto madrileño. Ha tenido que gestionar varios casos de acoso escolar, pero considera que el profesorado debería recibir mucha más formación para poder atajar el problema con rapidez.';
 $img_fb_url = URL_SITE . 'images/social/compartir-fb-caso-joseluis.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-joseluis.jpg';
 $page_url = URL_SITE . 'joseluis';
@@ -11,6 +11,10 @@ $page_url = URL_SITE . 'joseluis';
 $share_fb = 'Profesores como José Luis son los que necesitamos para lograr #PupitresLibres de acoso escolar. Yo ya he firmado la campaña para lograrlo.';
 $share_tw = 'Profesores como José Luis son los que necesitamos para lograr #PupitresLibres de acoso escolar. Yo ya he firmado la campaña de @amnistiaespana para lograrlo.';
 $share_wh = 'Profesores como José Luis son los que necesitamos para lograr #PupitresLibres de acoso escolar. Yo ya he firmado la campaña de Amnistía Internacional para lograrlo.';
+
+$url_share_fb = $page_url . TRACK_FB_UTM;
+$url_share_tw = $page_url . TRACK_TW_UTM;
+$url_share_wh = $page_url . TRACK_WH_UTM;
 
 //Asignar el caso
 $caso = 3;

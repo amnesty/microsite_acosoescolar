@@ -3,10 +3,6 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JHK4F4"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-    <div class="KW_progressContainer">
-        <div class="KW_progressBar">
-        </div>
-    </div>
 	<header class="cont-header bcolor-green-section">
 
 <?php

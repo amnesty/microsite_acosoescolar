@@ -3,7 +3,7 @@ include_once ("includes/config.php");
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'Violeta trabaja contra el acoso escolar dentro de su cole' . SEPARATOR . SITE_TITLE . SEPARATOR . SITE_NAME ;
-$description = SITE_DESCRIPTION;
+$description = 'Violeta forma parte del proyecto de “ayuda entre iguales en su instituto”. Ella, junto a sus compañeros y compañeras, son personas de referencia para quienes están sufriendo acoso escolar y no saben cómo gestionar el problema.';
 $img_fb_url = URL_SITE . 'images/compartir-fb-caso-violeta.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-violeta.jpg';
 $page_url = URL_SITE . 'violeta';
@@ -11,6 +11,10 @@ $page_url = URL_SITE . 'violeta';
 $share_fb = 'Programas de ayuda entre iguales como en el que participa Violeta son fundamentales para lograr llenar los colegios de #PupitresLibres de acoso escolar. Yo ya he firmado para conseguirlo. ¡Conócelo!';
 $share_tw = 'Programas de ayuda entre iguales como en el que participa Violeta son fundamentales para lograr llenar los colegios de #PupitresLibres de acoso escolar. Yo ya he firmado la campaña de @amnistiaespana para conseguirlo. ¡Conócelo!';
 $share_wh = 'Programas de ayuda entre iguales como en el que participa Violeta son fundamentales para lograr llenar los colegios de #PupitresLibres de acoso escolar. Yo ya he firmado la campaña de Amnistía Internacional para conseguirlo. ¡Conócelo!';
+
+$url_share_fb = $page_url . TRACK_FB_UTM;
+$url_share_tw = $page_url . TRACK_TW_UTM;
+$url_share_wh = $page_url . TRACK_WH_UTM;
 
 //Asignar el caso
 $caso = 4;

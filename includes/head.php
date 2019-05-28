@@ -11,10 +11,11 @@
     <meta name="pinterest" content="nopin" />
     <!--Open Graph-->
     <meta property="og:url" content="<?php echo $page_url; ?>" />
-    <meta property="og:title" content="<?php echo $page_title; ?>" />
 <?php if ($share_fb) { ?>
+	<meta property="og:title" content="<?php echo $share_fb; ?>" />
 	<meta property="og:description" content="<?php echo $share_fb; ?>" />
 <?php } else { ?>
+	<meta property="og:title" content="<?php echo $description; ?>" />
 	<meta property="og:description" content="<?php echo $description; ?>" />
 <?php } ?>
 	<meta property="og:image" content="<?php echo $img_fb_url; ?>" />

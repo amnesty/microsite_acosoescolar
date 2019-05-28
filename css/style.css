@@ -141,6 +141,10 @@ p{
 	font-family: 'Montserrat', sans-serif;
 }
 
+span{
+	font-family: 'Montserrat', sans-serif;
+}
+
 p span{
 	font-weight: 700;
 }
@@ -722,13 +726,24 @@ footer p:nth-of-type(2n){
 	padding-top: 5px;
 }
 
+.form-check-label {
+	display: flex;
+    align-items: center;
+}
+
+
+#check_privacidad .form-check-label span {
+    margin-left: 2px;
+}
+
+
 /*Test popup politica*/
 #test-popup.white-popup {
     padding: 30px 40px 20px 20px;
     width: auto;
     max-width: 760px;
 }
-#test-popup, #test-popup .form-check{
+#test-popup, #test-popup .form-check, #test-popup .form-check-label{
 	font-size: 16px;
 	line-height: 21px;
 }
@@ -743,9 +758,9 @@ footer p:nth-of-type(2n){
 }
 
 #test-popup .modal-footer label span{
-	position: absolute;
-	top: 3px;
 	margin-left: 5px;
+	/*font-size: 16px;
+	line-height: 21px;*/
 }
 
 #test-popup .mfp-close {
@@ -1891,7 +1906,7 @@ footer p:nth-of-type(2n){
 @media(max-width: 768px){
 
 
-#test-popup, #test-popup .form-check {
+#test-popup, #test-popup .form-check, #test-popup, #test-popup .form-check-label {
     font-size: 14px;
     line-height: 19px;
 }	

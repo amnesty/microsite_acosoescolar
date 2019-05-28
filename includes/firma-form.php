@@ -6,9 +6,9 @@ Se cambió: where accion = 'pupitres_libres' por: where accion LIKE 'pupitres_li
 porque tendremos la segementación por casos por quién firman
 */?>
 
-		<link rel="stylesheet" href="js/magnific-popup/dist/magnific-popup.css">
-		<script type="text/javascript" src="js/magnific-popup/dist/jquery.magnific-popup.js"></script>
-		<script type="text/javascript" src="js/politica.js"></script>
+		<link rel="stylesheet" href="<?php echo URL_SITE; ?>js/magnific-popup/dist/magnific-popup.css">
+		<script type="text/javascript" src="<?php echo URL_SITE; ?>js/magnific-popup/dist/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="<?php echo URL_SITE; ?>js/politica.js"></script>
 
 
 <?php

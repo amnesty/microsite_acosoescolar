@@ -1,5 +1,5 @@
 <?php
-include_once ("includes/config.php");
+include_once ("includes/config.php"); 
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'Descargas: Decálogo' . SEPARATOR . SITE_TITLE . SEPARATOR . SITE_NAME ;
@@ -53,10 +53,11 @@ $caso = 6;
 				<div width="100%" height="100%" class="columna-formulario bcolor-white-section">
 					<div style="height:100%" class="cont-formulario-right">
 						<?php #include_once ("includes/descarga-form.php"); ?>
- 						<iframe style="height:100%" src="https://pruebacrm.es.amnesty.org/descargas-decalogo-deteccion"></iframe>
+						 <p>Rellena el formulario para recibirlo vía email</p>
+ 						<iframe style="height:100%; min-height: 520px;" src="https://pruebacrm.es.amnesty.org/descargas-decalogo-deteccion"></iframe>
 					</div>
 				</div>
-			</div>
+			</div>	
 		</div>
 	</section>
 </main>

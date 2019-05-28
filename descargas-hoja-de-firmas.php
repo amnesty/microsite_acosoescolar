@@ -51,9 +51,11 @@ $caso = 6;
 					</div>
 					<img src="<?php echo URL_SITE; ?>images/hoja-firmas-interior.png" alt="hoja de firmas contra el acoso escolar">
 				</div>
-				<div class="columna-formulario bcolor-white-section">
-					<div class="cont-formulario-right">	
-<?php include_once ("includes/descarga-form.php"); ?>
+				<div width="100%" height="100%" class="columna-formulario bcolor-white-section">
+					<div style="height:100%" class="cont-formulario-right">
+						<?php #include_once ("includes/descarga-form.php"); ?>
+						 <p>Rellena el formulario para recibirlo vía email</p>
+ 						<iframe style="height:100%; min-height: 520px;" src="https://pruebacrm.es.amnesty.org/descargas-decalogo-deteccion"></iframe>
 					</div>
 				</div>
 			</div>	

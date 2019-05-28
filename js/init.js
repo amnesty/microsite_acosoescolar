@@ -84,7 +84,7 @@ $(document).ready(function() {
           var action  = $(this).data("e_a");
           var label  = $(this).data("e_l");
 
-          piwik_event(category, action, label);
+          send_ga_event(category, action, label);
         }
 
     });
@@ -108,18 +108,20 @@ $(window).scroll(function(event) {
   //CERRAR AVISO COOKIES AL HACER SCROLL
   jQuery('#cookie-law-info-bar').fadeOut();
 
-
-
-
 });//.scroll.function.event
 
 
 /*****************
 ****FUNCTIONS*****
 *****************/
-// FUNCION SEND PIWIK EVENT
-function piwik_event(category, action, label) {
-    _paq.push(['trackEvent', category, action, label]);
+
+// FUNCION SEND GA EVENT
+function send_ga_event(category, action, label) {
+    //_paq.push(['trackEvent', category, action, label]);
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label,
+    });
 }
 
 

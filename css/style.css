@@ -1834,6 +1834,11 @@ footer p:nth-of-type(2n){
 
 @media(max-width: 980px){
 
+	.padding-20{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
 	.columna-contenido{
 		float: none;
 		max-width: 100%;

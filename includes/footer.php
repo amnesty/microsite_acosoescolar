@@ -22,7 +22,6 @@ if (strpos( $_SERVER['PHP_SELF'], 'gracias')) {
 
 <?php //include ("includes/pixelret.php"); ?>
 
-<?php /*
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
@@ -43,4 +42,3 @@ if (strpos( $_SERVER['PHP_SELF'], 'gracias')) {
 </script>
 <noscript><p><img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
-*/ ?>

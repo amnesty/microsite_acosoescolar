@@ -17,7 +17,7 @@ $url_share_tw = 'http://bit.ly/2HXYvOU';
 $url_share_wh = 'http://bit.ly/2I15IOj';
 
 //Asignar el caso
-$caso = 6;
+$caso = 7;
 ?>
 <!DOCTYPE html>
 <html lang="es">

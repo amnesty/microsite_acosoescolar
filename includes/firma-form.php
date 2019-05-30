@@ -59,7 +59,7 @@ $progress_percent = (($num_firmas_bd_bak+$num_firmas) / $num_firmas_total)*100;
       <div class="progress-bar-firmas progress-firmas"></div>
     </div>
 
-    <form style="display: visible" id="formFirma" name="formFirma" class="formulario-firma" action="includes/enviar_form.php" method="post" onsubmit="return validarFormFirma(document.forms['formFirma']);">
+    <form style="display: visible" id="formFirma" name="formFirma" class="formulario-firma" action="<?php echo URL_SITE; ?>includes/enviar_form.php" method="post" onsubmit="return validarFormFirma(document.forms['formFirma']);">
 
       <div id="firma" class="form-group">
         <input type="text" class="form-control" name="email" placeholder="Email*">

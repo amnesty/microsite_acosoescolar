@@ -69,7 +69,11 @@ if(isset($_GET['utm_campaign'])) {
 
 //Array con los casos para usarse en la segmentación y/o en la página de gracias si hace falta saber por quién han firmado.
 //Tambíen se usa para los eventos de analítica
-//Añada Home, Descargas, Broncano y Gracias.
+//Añade Home, Descargas, Broncano y Gracias.
+
+// Array [i][0] --> Id Página
+// Array [i][1] --> Segmetación, casos y origen para AI
+// Array [i][2] --> Label Eventos GA
 $casos = array(
 	0 => array('Home', 'pupitres_libres', 'home'),
 	1 => array('Carmen', 'pupitres_libres_carmen', 'carmen'),
@@ -78,8 +82,12 @@ $casos = array(
 	4 => array('Violeta', 'pupitres_libres_violeta', 'violeta'),
 	5 => array('Broncano', 'pupitres_libres_broncano', 'broncano'),
 	6 => array('Descargas', 'pupitres_libres_descargas', 'descargas'),
-	//7 => array('Gracias', 'pupitres_libres_gracias', 'gracias'),
-	//8 => array('Gracias Descargas', 'pupitres_libres_gracias_descargas', 'gracias_descargas'),
+
+	7 => array('Descargas Informe', 'pupitres_libres_descargas_informe', 'informe'),
+	8 => array('Descargas Decálogo', 'pupitres_libres_descargas_decalogo', 'decalogo'),
+	9 => array('Descargas Cártel', 'pupitres_libres_descargas_cartel', 'cartel'),
+	10 => array('Descargas Hoja Firmas', 'pupitres_libres_descargas_hoja_firmas', 'hoja_firmas'),
+
 );
 
 //POR SI NO SE SELECCIONA NINGÚN CASO

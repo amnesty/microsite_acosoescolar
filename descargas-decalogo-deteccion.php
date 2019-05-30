@@ -17,7 +17,7 @@ $url_share_fb = 'http://bit.ly/2I4o1BU';
 $url_share_tw = 'http://bit.ly/2HWis8A';
 $url_share_wh = 'http://bit.ly/2I3NNGz';
 
-$caso = 6;
+$caso = 8;
 ?>
 <!DOCTYPE html>
 <html lang="es">

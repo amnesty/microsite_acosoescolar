@@ -602,13 +602,14 @@ footer p:nth-of-type(2n){
 	max-width: 360px;
 	width: 100%;
 	height: 100%;
-	padding: 20px 0;
+	/*padding-bottom:20px;*/
 	text-align: center;
 	margin: 14px 0;
 }
 
 .cont-formulario-int{
 	margin: 0 20px;
+	padding: 32px 0 32px 0;
 }
 
 .cont-formulario p{
@@ -616,7 +617,7 @@ footer p:nth-of-type(2n){
 	line-height: 17px;
 	color: #000000;
 	padding-bottom: 15px;
-	max-width: 316px;
+	/*max-width: 316px;*/
 }
 .cont-formulario p.error, .cont-formulario-interior p.error {
 	padding-bottom: 5px;
@@ -1495,7 +1496,7 @@ footer p:nth-of-type(2n){
 }
 
 .columna-contenido img{
-	/*max-width: 740px;*/
+	max-width: 740px;
 	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1510,7 +1511,6 @@ footer p:nth-of-type(2n){
     float: left;
     position: relative;
     color: #000000;
-    padding: 32px 0;
     height: 100%;
 }
 
@@ -1531,6 +1531,7 @@ footer p:nth-of-type(2n){
 	text-align: center;
 	color: #000000;
 	margin: 0 20px;
+	padding-top: 32px;
 }
 
 .cont-formulario-right-inside{
@@ -1832,6 +1833,11 @@ footer p:nth-of-type(2n){
 }
 
 @media(max-width: 980px){
+
+	.padding-20{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 
 	.columna-contenido{
 		float: none;

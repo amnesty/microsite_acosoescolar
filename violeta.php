@@ -1,5 +1,5 @@
 <?php
-include_once ("includes/config.php"); 
+include_once ("includes/config.php");
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'Violeta trabaja contra el acoso escolar dentro de su cole' . SEPARATOR . SITE_TITLE . SEPARATOR . SITE_NAME ;
@@ -21,7 +21,7 @@ $caso = 4;
 ?>
 <!DOCTYPE html>
 <html lang="es">
-<head>	
+<head>
 <?php include_once ("includes/head.php"); ?>
 </head>
 
@@ -56,7 +56,7 @@ $caso = 4;
 								<iframe src="https://www.youtube.com/embed/9Eb3AU1zV38" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 						</div>
-						
+
 						<p class="black">Violeta forma parte del proyecto de “ayuda entre iguales en su instituto”. Ella, junto a sus compañeros y compañeras, son personas de referencia para quienes están sufriendo acoso escolar y no saben cómo gestionar el problema. Ella tiene claro que es más fácil para un compañero o compañera hablar con ella que con el profesorado. Porque ella vive en la misma realidad y no lo ve como “una cosa de niños”. Violeta sí que se imagina un colegio sin acoso escolar. Sería un lugar en el que todo el mundo se tratase con respeto. <br><br/>
 
 						Amnistía Internacional con su campaña <span>#PupitresLibres</span> de acoso escolar trabaja para que haya más jóvenes como Violeta en los colegios e institutos. <br><br/>
@@ -67,7 +67,7 @@ $caso = 4;
 				</div>
 				<div class="columna-formulario bcolor-white-section">
 					<div class="cont-formulario-interior">
-<?php include_once ("includes/firma-form.php"); ?>					
+<?php include_once ("includes/firma-form.php"); ?>
 					</div>
 				</div>
 			</div>

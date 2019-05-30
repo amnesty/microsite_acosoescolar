@@ -206,12 +206,13 @@ $progress_percent = (($num_firmas_bd_bak+$num_firmas) / $num_firmas_total)*100;
 			<div id="test-popup" class="modal-dialog mfp-hide white-popup mfp-hide" role="document">
 					<div class="modal-content">
 						<div class="modal-body form-check">
-							<p>Si quieres recibir otras acciones como esta e información adicional de Amnistía Internacional recuerda marcar la siguiente casilla antes de enviar tu firma.</p>
+							<p>Si quieres recibir otras acciones como esta e información adicional de Amnistía Internacional para cambiar el mundo, haz click en el botón verde.</p>
 						</div>
 						<div class="modal-footer">
 									<label class="ai-accion-firma__check bigger form-check-label">
-											<input type="checkbox" id="ai-accion-firma__masinfo_reminder" class="form-check-input"/>
-											<span>Quiero recibir acciones para cambiar el mundo</span>
+											<input type="checkbox" id="ai-accion-firma__masinfo_reminder" class="form-check-input" style="display:none"/>
+											<button type="checkbox" id="ai-accion-firma__masinfo_button" class="form-check-input">Sí quiero</button>
+											<!--<span>Quiero recibir acciones para cambiar el mundo</span>-->
 									</label>
 						</div>
 					</div>

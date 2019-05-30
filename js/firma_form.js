@@ -86,9 +86,15 @@ function validarFormFirma(f) {
                     $('#test-popup').data("shown", 1);
                     _paq.push(["trackEvent", "popup_check", "mostrado"]);
 
-                    input.change(function(){
+                    /*input.change(function(){
                         var check = $("#ai-accion-firma__masinfo");
                         check.prop("checked", true);
+                        $("#check_reminder").prop("checked", true);
+                        document.formFirma.submit();
+                    });*/
+                    $( "#ai-accion-firma__masinfo_button" ).click(function(){
+                        var check = $("#ai-accion-firma__masinfo");
+                        $('#ai-accion-firma__masinfo_reminder').prop("checked", true);
                         $("#check_reminder").prop("checked", true);
                         document.formFirma.submit();
                     });

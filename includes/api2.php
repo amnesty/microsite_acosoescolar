@@ -51,6 +51,31 @@ function ai_curl_post($url, $data){
     return json_decode($response, true);
 }
 
+function ai_curl_put($url, $data){
+
+    $curl = curl_init();
+    curl_setopt_array($curl, array(
+        CURLOPT_URL => $url,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 30,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "PUT",
+        CURLOPT_POSTFIELDS => $data,
+        CURLOPT_HTTPHEADER => array(
+          "cache-control: no-cache",
+          "content-type: application/json",
+          'Authorization: '.TOKEN.''
+        ),
+    ));
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
+    curl_close($curl);
+
+    return json_decode($response, true);
+}
+
 function do_curl($url, $method, $headers, $postText){
 
     $curl = curl_init();
@@ -157,7 +182,7 @@ function get_fecha(){
 
 /************************* POSTs *************************/
 
-function post_member_ai($email, $nombre, $apellidos, $telefono, $pais_siglas, $pais_nombre){
+function post_member_ai($email, $nombre, $apellidos, $telefono, $pais_siglas, $pais_nombre, $estado = null, $no_fundraising = null){
 
     $data = '{
         "firstname": "'.$nombre.'",
@@ -181,7 +206,10 @@ function post_member_ai($email, $nombre, $apellidos, $telefono, $pais_siglas, $p
         "crm_id": 0,
         "source": "",
         "segment": "3",
-        "synchro_update" : "'.get_fecha().'"
+        "estado": "'.$estado.'",
+        "synchro_insert" : "'.get_fecha().'",
+        "synchro_update" : "'.get_fecha().'",
+        "no_fundraising": "'.$no_fundraising.'"
      }';
 
     $url = "http://".IP.":".PORT."/api/members/";
@@ -207,7 +235,7 @@ function post_purchase_ai($member_id, $product_id) {
     return $res;
 }
 
-function post_member_experian($members_id, $firstname, $lastname, $email, $telefono, $pais_siglas, $pais_nombre){
+function post_member_experian($members_id, $firstname, $lastname, $email, $telefono, $pais_siglas, $pais_nombre, $estado = null, $no_fundraising = null){
 
   // Token
   $token = get_token();
@@ -268,6 +296,14 @@ function post_member_experian($members_id, $firstname, $lastname, $email, $telef
         {
           "name":"synchro_update",
           "value":"'.$now.'"
+        },
+        {
+          "name":"estado",
+          "value":"'.$estado.'"
+        },
+        {
+          "name":"no_fundraising",
+          "value":"'.$no_fundraising.'"
         }]
       }';
 
@@ -336,6 +372,61 @@ function post_member_purchase_experian($purchase_id, $product_id, $member_id, $e
     //echo $purchase_id."-".$product_id."-".$member_id;
     return $res["result"];
 
+}
+
+/************************* PUTs *************************/
+function put_member_ai($member_id, $email, $no_fundraising){
+
+    $data = '{
+        "email": "'.$email.'",
+        "datejoin": "'.get_member_by_email($email)[0]["datejoin"].'",
+        "synchro_update" : "'.get_fecha().'",
+        "no_fundraising": "'.$no_fundraising.'"
+     }';
+
+    $url = "http://".IP.":".PORT."/api/members/".$member_id."/";
+    $res = ai_curl_put($url, $data);
+    return $res;
+}
+
+function put_member_experian($members_id, $email, $no_fundraising){
+
+  // Token
+  $token = get_token();
+
+  // Header
+  $headers = array(
+    "Authorization: Bearer ".$token,
+    "content-type: application/json",);
+
+    $url = "https://api.ccmp.eu/services2/api/Recipients/";
+
+    date_default_timezone_set('Europe/Madrid');
+    $now = date("m/d/Y H:i:s");
+
+    $postText = '{
+      "apiPostId": "24",
+      "data": [
+        {
+          "name":"members_id",
+          "value":"'.$members_id.'"
+        },
+        {
+          "name": "email",
+          "value": "'.$email.'"
+        },
+        {
+          "name":"synchro_update",
+          "value":"'.$now.'"
+        },
+        {
+          "name":"no_fundraising",
+          "value":"'.$no_fundraising.'"
+        }]
+      }';
+
+      $res = do_curl($url,"POST",$headers,$postText);
+      return $res["result"];
 }
 
 ?>

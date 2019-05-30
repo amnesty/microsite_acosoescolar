@@ -51,13 +51,12 @@ $caso = 2;
 						</div>
 						<p class="black p-bottom-caso">Eme sufrió acoso escolar durante 4 años.</p>
 						<p class="black semibold">"Yo no sé por qué me tocó a mi, pero igual que me tocó a mí, sé que también le ha tocado a más gente de ese instituto. Y ahora lo cuento para que nadie más tenga que pasar lo que yo he pasado."</p>
-
 						<div class="grid-video">
 							<div class="video-responsive">
-								<iframe src="https://www.youtube.com/embed/9Eb3AU1zV38" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								<!--<iframe src="https://www.youtube.com/embed/9Eb3AU1zV38" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+								<div data-idyt="9Eb3AU1zV38" data-category="Vídeos" data-action="Reproducir" data-label="Caso Eme" id="videocase"></div>
 							</div>
 						</div>
-						
 						<p class="black">Eme no era consciente de que lo que le llevaba viviendo 4 años en su nuevo cole era acoso escolar. Primero empezaron a insultarla, lo siguiente fue pegarla. Al final, un día, una compañera la tiró por las escaleras del colegio. La única persona que la ayudó fue la mujer encargada de las becas escolares. Cuando fue a denunciarlo a la jefatura de estudios le dijeron que no podían hacer nada, que era una "cosa de críos". El acoso solo terminó cuando los padres de Eme la cambiaron de instituto.
   						<br><br/>
 

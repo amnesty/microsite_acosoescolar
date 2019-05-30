@@ -50,13 +50,12 @@ $caso = 3;
 						</div>
 						<p class="black p-bottom-caso">La historia de José Luis: un profesor frente al acoso escolar.</p>
 						<p class="black semibold">"La formación que tenemos el profesorado es desigual, deberíamos recibir más. Porque a veces no es tan sencillo. Te lo tiene que contar alguien y al ser posible, que alguien te lo cuente antes que la propia víctima, porque cuando te lo cuenta la víctima a lo mejor la cosa ya está muy avanzada, y ahí ya hay herida."</p>
-
 						<div class="grid-video">
 							<div class="video-responsive">
-								<iframe src="https://www.youtube.com/embed/9Eb3AU1zV38" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								<!--<iframe src="https://www.youtube.com/embed/9Eb3AU1zV38" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+								<div data-idyt="9Eb3AU1zV38" data-category="Vídeos" data-action="Reproducir" data-label="Caso José Luis" id="videocase"></div>
 							</div>
-						</div>
-						
+						</div>				
 						<p class="black">José Luis es profesor de alemán en un instituto madrileño. Ha tenido que gestionar varios casos de acoso escolar, pero considera que el profesorado debería recibir mucha más formación para poder atajar el problema con rapidez. Y está convencido de una cosa: si en su instituto no hubiera un compromiso claro para luchar contra el acoso escolar, muchos más chavales y chavalas lo sufrirían.
   						<br><br/>
 

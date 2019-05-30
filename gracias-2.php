@@ -47,7 +47,7 @@ if($caso) {
 			<img src="<?php echo URL_SITE; ?>images/pulseras-donativo.png" alt="pulseras de apoyo: coles libres de acoso escolar">
 			<div class="right">
 				<p class="p-small black"><span>Haz un donativo para ayudarnos a seguir con nuestro trabajo y te enviamos a casa esta pulsera</span>: la podrás regalar a los niños, niñas y adolescentes de tu entorno para concienciarles a que colaboren a crear un cole libre de acoso escolar.</p>
-				<a target="_blank" class="bcolor-yellow black" href="<?php echo URL_DONA; ?>">Haz un donativo</a>
+				<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="gracias boton dona" data-e_l="gracias boton dona" target="_blank" class="bcolor-yellow black send-piwik-event" href="<?php echo URL_DONA; ?>">Haz un donativo</a>
 			</div>
 		</div>
 	</section>	
@@ -57,7 +57,7 @@ if($caso) {
 		<div class="grid-container-small grid">
 			<p class="black"><span>Únete a la familia de Amnistía Internacional</span></p>
 			<p class="black p-small">Sólo con el apoyo de personas como tú podemos trabajar con total independencia y exigir al gobierno español un sistema educativo libre de acoso escolar. <br><br/> Contigo a nuestro lado, podemos conseguir el mundo en el que los niños y niñas disfrutan de su infancia y desarrollan al máximo su potencial y confianza en el futuro.</p>
-			<a target="_blank" class="white bcolor-green" href="<?php echo URL_SOCIO; ?>">Hazte socio/a</a>
+			<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="gracias boton socio" data-e_l="gracias boton socio" target="_blank" class="white bcolor-green send-piwik-event" href="<?php echo URL_SOCIO; ?>">Hazte socio/a</a>
 		</div>
 	</section>
 	

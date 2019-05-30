@@ -65,7 +65,7 @@ if($isMobile) {
 ?>	
 			</div>
 			<p class="p-small black">¡No te vayas todavía! Aún puedes hacer mucho más por los niños y niñas que sufren acoso escolar.</p>
-			<a class="bcolor-yellow black continuar-btn" href="<?php echo URL_SITE; ?>gracias-2">Continuar</a>
+			<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="gracias boton continuar" data-e_l="gracias boton continuar" class="bcolor-yellow black continuar-btn send-piwik-event" href="<?php echo URL_SITE; ?>gracias-2">Continuar</a>
 		</div>
 	</section>
 

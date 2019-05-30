@@ -69,7 +69,7 @@ $caso = 0;
 						  <div class="testimonios-container-info">
 						  	<h3 class="white text-center">Carmen</h3>
 						  	<p class="white text-center">Una madre que no se quedó de brazos cruzados</p>
-						  	<a href="<?php echo URL_SITE; ?>carmen" class="bcolor-yellow black text-center">Ver su historia</a>
+						  	<a data-e_c="Casos" data-e_a="Clic" data-e_l="Caso Carmen" href="<?php echo URL_SITE; ?>carmen" class="bcolor-yellow black text-center send-piwik-event">Ver su historia</a>
 						  </div>
 					</div>
 
@@ -79,7 +79,7 @@ $caso = 0;
 					  <div class="testimonios-container-info">
 					  	<h3 class="white text-center">Eme</h3>
 					  	<p class="white text-center">Sufrió acoso escolar durante 4 años</p>
-					  	<a href="<?php echo URL_SITE; ?>eme" class="bcolor-yellow black text-center">Ver su historia</a>
+					  	<a data-e_c="Casos" data-e_a="Clic" data-e_l="Caso Eme" href="<?php echo URL_SITE; ?>eme" class="bcolor-yellow black text-center send-piwik-event">Ver su historia</a>
 					  </div>
 					</div>
 
@@ -89,7 +89,7 @@ $caso = 0;
 					  <div class="testimonios-container-info">
 					  	<h3 class="white text-center">José Luis</h3>
 					  	<p class="white text-center">Un profesor frente al acoso escolar</p>
-					  	<a href="<?php echo URL_SITE; ?>joseluis" class="bcolor-yellow black text-center">Ver su historia</a>
+					  	<a data-e_c="Casos" data-e_a="Clic" data-e_l="Caso José Luis" href="<?php echo URL_SITE; ?>joseluis" class="bcolor-yellow black text-center send-piwik-event">Ver su historia</a>
 					  </div>
 					</div>
 
@@ -99,7 +99,7 @@ $caso = 0;
 					  <div class="testimonios-container-info">
 					  	<h3 class="white text-center">Violeta</h3>
 					  	<p class="white text-center">Trabaja contra el acoso escolar dentro de su cole</p>
-					  	<a href="<?php echo URL_SITE; ?>violeta" class="bcolor-yellow black text-center">Ver su historia</a>
+					  	<a data-e_c="Casos" data-e_a="Clic" data-e_l="Caso Violeta" href="<?php echo URL_SITE; ?>violeta" class="bcolor-yellow black text-center send-piwik-event">Ver su historia</a>
 					  </div>
 					</div>
 
@@ -112,7 +112,7 @@ $caso = 0;
 			<div class="grid-container-small grid">
 				<h2 class="white">¿Qué es la ayuda entre iguales?</h2>
 				<p class="p-big white">El presentador David Broncano ha querido saber qué es la ayuda entre iguales y ha entrevistado a varios chicos y chicas que forman parte de esta iniciativa para prevenir y combatir el acoso escolar, en el colegio IES Miguel Catalán de Coslada, en Madrid. Porque él también sabe que es posible tener pupitres libres de acoso escolar en los colegios.</p>
-				<a class="btn-modulo bcolor-yellow black" href="<?php echo URL_SITE; ?>broncano">Ver entrevista</a>
+				<a data-e_c="Casos" data-e_a="Clic" data-e_l="Caso David Broncano" class="btn-modulo bcolor-yellow black send-piwik-event" href="<?php echo URL_SITE; ?>broncano">Ver entrevista</a>
 			</div>
 		</section>
 
@@ -154,7 +154,7 @@ $caso = 0;
 					</div>
 				</div>
 				<p class="p-big black">Si quieres saber más sobre las propuestas de Amnistía Internacional descarga gratis el informe completo.</p>
-				<a href="<?php echo URL_SITE; ?>descargas-informe" class="btn-propuestas-descarga bcolor-yellow black">Descargar</a>
+				<a data-e_c="Descargas" data-e_a="Clic" data-e_l="Informe" href="<?php echo URL_SITE; ?>descargas-informe" class="btn-propuestas-descarga bcolor-yellow black send-piwik-event">Descargar</a>
 			</div>
 		</section>
 
@@ -164,9 +164,9 @@ $caso = 0;
 				<h2 class="white">¿Qué puedes hacer tú además de firmar?</h2>
 				<p class="p-big white">Tú eres parte de la solución. Si quieres que tu colegio sea un lugar libre de acoso escolar, puedes descargarte nuestros materiales didácticos y poner tu granito de arena en la lucha contra el acoso escolar.</p>
 				<div class="container-acciones">
-					<a class="bcolor-yellow black" href="<?php echo URL_SITE; ?>descargas-decalogo-deteccion">Cómo detectar el <br> acoso escolar</a>
-					<a class="bcolor-yellow black" href="<?php echo URL_SITE; ?>descargas-cartel">Aulas libres de <br> acoso escolar</a>
-					<a class="bcolor-yellow black" href="<?php echo URL_SITE; ?>descargas-hoja-de-firmas">Multiplica la campaña <br> en tu cole</a>
+					<a data-e_c="Descargas" data-e_a="Clic" data-e_l="Decálogo" class="bcolor-yellow black send-piwik-event" href="<?php echo URL_SITE; ?>descargas-decalogo-deteccion">Cómo detectar el <br> acoso escolar</a>
+					<a data-e_c="Descargas" data-e_a="Clic" data-e_l="Carteles" class="bcolor-yellow black send-piwik-event" href="<?php echo URL_SITE; ?>descargas-cartel">Aulas libres de <br> acoso escolar</a>
+					<a data-e_c="Descargas" data-e_a="Clic" data-e_l="Hojas de firmas" class="bcolor-yellow black send-piwik-event" href="<?php echo URL_SITE; ?>descargas-hoja-de-firmas">Multiplica la campaña <br> en tu cole</a>
 				</div>
 				<p class="p-big white">Para septiembre</p>
 				<div class="container-acciones-2">
@@ -183,7 +183,7 @@ $caso = 0;
 				<div class="container-apoyo">
 					<div class="left">
 						<p class="p-small black">Haz un donativo para ayudarnos a seguir con nuestro trabajo de denuncia y te enviamos a casa esta pulsera: la podrás regalar a los niños, niñas y adolescentes de tu entorno para concienciarles a que colaboren a crear un cole libre de acoso escolar.</p>
-						<a target="_blank" href="<?php echo URL_DONA; ?>" class="bcolor-yellow black" >Haz un donativo</a>
+						<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="home boton dona" data-e_l="home boton dona" target="_blank" href="<?php echo URL_DONA; ?>" class="bcolor-yellow black send-piwik-event" >Haz un donativo</a>
 					</div>
 					<img src="<?php echo URL_SITE; ?>images/pulseras-apoyo.png" alt="pulseras de apoyo:coles libres de acoso escolar">
 				</div>
@@ -197,7 +197,7 @@ $caso = 0;
 				<p class="black p-big">Sólo con el apoyo de personas como tú podemos trabajar con total independencia y exigir al gobierno español que tome medidas urgentes para conseguir un sistema educativo libre de acoso escolar.</p>
 				<p class="black p-big">Contigo a nuestro lado, podemos conseguir el mundo que queremos: un mundo en el que los niños y niñas disfrutan de su infancia y desarrollan al máximo su potencial y confianza en el futuro.
 				</p>
-				<a target="_blank" href="<?php echo URL_SOCIO; ?>" class="white bcolor-green" >Hazte socio/a</a>
+				<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="home boton socio" data-e_l="home boton socio" target="_blank" href="<?php echo URL_SOCIO; ?>" class="white bcolor-green send-piwik-event" >Hazte socio/a</a>
 			</div>
 		</section>	
 	</main>

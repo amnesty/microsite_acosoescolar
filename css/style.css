@@ -76,7 +76,7 @@ body{
 }
 
 main{
-	margin-top: 80px;
+	margin-top: 60px;
 }
 
 .grid-container-big{
@@ -309,7 +309,7 @@ footer p:nth-of-type(2n){
 #cookie-law-info-bar {
 	font-family: 'Montserrat', sans-serif;
 	padding: 25px 0px 25px!important;
-	top: 80px!important;
+	top: 60px!important;
 }
 
 /*Header*/
@@ -321,7 +321,7 @@ footer p:nth-of-type(2n){
 	z-index: 2;
 	width: 100%;
 	max-height: 50px;
-	padding: 15px 0;
+	padding: 5px 0;
 }
 
 .cont-header-int{
@@ -612,6 +612,10 @@ footer p:nth-of-type(2n){
 	padding: 32px 0 32px 0;
 }
 
+.index .cont-formulario-int{
+	padding: 20px 0 20px 0;
+}
+
 .cont-formulario p{
 	font-size: 12px;
 	line-height: 17px;
@@ -740,13 +744,14 @@ footer p:nth-of-type(2n){
 
 /*Test popup politica*/
 #test-popup.white-popup {
-    padding: 30px 40px 20px 20px;
+    padding: 5px 40px 20px 20px;
     width: auto;
-    max-width: 760px;
+    max-width: 550px;
 }
 #test-popup, #test-popup .form-check, #test-popup .form-check-label{
-	font-size: 16px;
-	line-height: 21px;
+	font-size: 14px;
+    line-height: 19px;
+    text-align: center;
 }
 
 #test-popup .modal-footer label {
@@ -757,6 +762,74 @@ footer p:nth-of-type(2n){
 	width: 18px;
 	height: 18px;
 }
+
+#test-popup .modal-footer label button.form-check-input {
+	margin: 0 auto 0;
+	padding: 10px 10px 5px 10px;
+	font-family: 'Teko', sans-serif;
+	font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+	line-height: 32px;
+    text-transform: uppercase;
+    background-color: #869817;
+    color: #ffffff;
+    display: block;
+    border: none;
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+#test-popup .modal-footer label button.form-check-input:before{
+	content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffff00;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#test-popup .modal-footer label button.form-check-input:hover, #test-popup .modal-footer label button.form-check-input:focus, #test-popup .modal-footer label button.form-check-input:active{
+	color: black;
+}
+
+#test-popup .modal-footer label button.form-check-input:hover:before, #test-popup .modal-footer label button.form-check-input:focus:before, #test-popup .modal-footer label button.form-check-input:active:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
 
 #test-popup .modal-footer label span{
 	margin-left: 5px;
@@ -1877,6 +1950,11 @@ footer p:nth-of-type(2n){
 		margin-bottom: 50px;
 	}
 
+	.cont-formulario-int {
+	    padding: 20px 0 20px 0;
+	}
+
+
 }
 
 /*
@@ -1913,9 +1991,18 @@ footer p:nth-of-type(2n){
 
 
 #test-popup, #test-popup .form-check, #test-popup, #test-popup .form-check-label {
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 12px;
+    line-height: 16px;
 }	
+
+
+#test-popup .modal-footer label button.form-check-input {
+	padding: 8px 8px 3px 8px;
+	font-size: 20px;
+	line-height: 22px;
+
+
+}
 
 .container-acciones a, .container-acciones-2 a {
     max-width: 255px;

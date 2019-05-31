@@ -48,9 +48,9 @@ $caso = 10;
 							</div>
 						</div>
 						<p>Movilizar y concienciar a los padres, madres y profesorado del colegio contra el acoso escolar es el primer paso para combatirlo. Además, la firma es una forma de compromiso con la causa y una forma de que podamos tener más impacto a la hora de presionar al gobierno para que ponga en marcha las medidas que exigimos para garantizar que todos los alumnos y alumnas disfruten de aulas libres de acoso escolar. <br><br/> Descarga esta hoja de firmas. Imprime varias copias y organiza una recogida de firmas en el colegio para implicar a todos y a todas y envíalas a nuestras oficinas o al grupo local de Amnistía Internacional más cercano a ti.</p>
-					</div>
-					<img src="<?php echo URL_SITE; ?>images/hoja-firmas-interior.png" alt="hoja de firmas contra el acoso escolar">
-				</div>
+						<img src="<?php echo URL_SITE; ?>images/hoja-firmas-interior.png" alt="hoja de firmas contra el acoso escolar" class="hoja-firmas-interior">
+					</div><!--.columna-contenido-inside-->	
+				</div><!--.columna-contenido-->
 				<div width="100%" height="100%" class="columna-formulario bcolor-white-section">
 					<div style="height:100%" class="cont-formulario-right">
 						<?php #include_once ("includes/descarga-form.php"); ?>

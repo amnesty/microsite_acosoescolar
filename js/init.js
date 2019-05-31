@@ -1,14 +1,17 @@
 /****************** 
 ***   VARS      ***
 ******************/
-var done = false;
+var done_PLAYING = false;
+var done_PAUSED = false;
+var done_ENDED = false;
+
 
 $(document).ready(function() {
 
   /****************** 
   *** API YOUTUBE ***
   ******************/
-  var player = {};
+  //var player = {};
 
   // Load the YouTube API. For some reason it's required to load it like this
   // Load the IFrame Player API code asynchronously.
@@ -17,7 +20,7 @@ $(document).ready(function() {
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-  setColumnaContenidoHeight();
+  setColumnaHeight();
 
   moveProgressBar();
 
@@ -107,7 +110,7 @@ $(window).scroll(function(event) {
 
 $(window).resize(function() {
     //moveProgressBar();
-    setColumnaContenidoHeight();
+    setColumnaHeight();
 
 });//.window.resize
 
@@ -119,13 +122,7 @@ $(window).resize(function() {
 function onYouTubeIframeAPIReady() {
 
   var idYouTube =  $('#videocase').data("idyt");
-  /*var category =  $('#videocase').data("category");
-  var action =  $('#videocase').data("action");
-  var label =  $('#videocase').data("label");*/
-
   player = new YT.Player('videocase', {
-    //height: '703',
-    //width: '1250'
     videoId: idYouTube,
     playerVars: {
        'autoplay': 0,
@@ -139,22 +136,23 @@ function onYouTubeIframeAPIReady() {
        'iv_load_policy': 3,
        'color': 'white'
       },
-
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange  
       }
-
   });
 
 }
 
 function onPlayerReady(event) {
-    //event.target.playVideo();
+    event.target.setPlaybackQuality ('highres');
 }
 
 
 function onPlayerStateChange(event) {
+
+  //console.log ( player.getCurrentTime() );
+
 
   var idYouTube =  $('#videocase').data("idyt");
   
@@ -162,12 +160,45 @@ function onPlayerStateChange(event) {
   var action =  $('#videocase').data("action");
   var label =  $('#videocase').data("label");
 
-  if (event.data == YT.PlayerState.PLAYING  && !done) {
+  // 1st PLAY - todos los videos
+  if (event.data == YT.PlayerState.PLAYING  && !done_PLAYING) {
     setTimeout (function(){}, 10)
     send_ga_event(category, action, label);
-    done = true;
+    done_PLAYING = true;
+  }
+
+  //Broncano
+  if ('NgHXFTgaVT0' === idYouTube ) {
+    // Puase
+    if (event.data == YT.PlayerState.PAUSED  && !done_PAUSED) {
+      send_ga_event(category, 'Paused', label);
+      done_PAUSED = true;
+    }
+    // Reproducción 5 min
+    if (event.data == YT.PlayerState.PLAYING  && !done_PLAYING) {
+    }
+
+    // Reproducción 25 min
+    if (event.data == YT.PlayerState.PLAYING  && !done_PLAYING) {
+    }
+    // Reproducción 40 min
+    if (event.data == YT.PlayerState.PLAYING  && !done_PLAYING) {
+    }            
+    // Reproducción 100% Final
+    if (event.data == YT.PlayerState.ENDED  && !done_ENDED) {
+      send_ga_event(category, 'Ended', label);
+      done_ENDED = true;
+    }  
+
   }
 }
+
+function youtube_parser(url){
+    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+    var match = url.match(regExp);
+    return (match&&match[7].length==11)? match[7] : false;
+}
+
 
 //Barra de Firmas Animada
 function moveProgressBar() {
@@ -189,18 +220,20 @@ function send_ga_event(category, action, label) {
     });
 }
 
-function setColumnaContenidoHeight () {
+function setColumnaHeight () {
   var paddingY =  $(".columna-contenido").outerHeight() - $(".columna-contenido").height();
   var minHeight = $(window).height() - $("header").innerHeight() - $("footer").innerHeight() - paddingY;
 
-  // Estabelce altura mínima en columna contenido
-  $(".columna-contenido").css ({ 'min-height': minHeight + 'px' });
-
-  // Estabelcer altura en columna formulario/columna contenido
   if (window.matchMedia('(max-width: 980px)').matches) { 
+    $(".columna-contenido").css ({ 'height': '100%' });
+    $(".columna-contenido").css ({ 'min-height': 'auto' });   
+
     $(".columna-formulario").css ({ 'height': '100%' });
+
   } else {
+    $(".columna-contenido").css ({ 'min-height': minHeight + 'px' });
     $(".columna-formulario").css ({ 'height': $(".columna-contenido").innerHeight() +'px' });
+
   }
 
 }

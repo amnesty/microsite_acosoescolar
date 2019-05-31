@@ -48,10 +48,13 @@ $caso = 8;
 							</div>
 						</div>
 						<p class="black">Detectar el acoso escolar es clave para poder prevenir e intervenir a tiempo. A veces, pequeñas señales pasan desapercibidas y podrían ser el comienzo de una relación de acoso escolar. <br><br/>Descárgate gratis este decálogo e infórmate de cómo detectar el acoso escolar a tiempo.</p>
-					</div>
-					<img src="<?php echo URL_SITE; ?>images/decalogo-interior.png" alt="Decálogo para detectar el acoso escolar">
-				</div>
-				<div width="100%" height="100%" class="columna-formulario bcolor-white-section">
+						<img src="<?php echo URL_SITE; ?>images/decalogo-interior.png" alt="Decálogo para detectar el acoso escolar" class="decalogo-interior">
+						
+
+
+					</div><!--.columna-contenido-inside-->
+				</div><!--.columna-contenido-->
+				<div class="columna-formulario bcolor-white-section">
 					<div style="height:100%" class="cont-formulario-right">
 						<?php #include_once ("includes/descarga-form.php"); ?>
 						 <p>Rellena el formulario para recibirlo vía email</p>

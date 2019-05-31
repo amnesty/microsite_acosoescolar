@@ -48,9 +48,9 @@ $caso = 7;
 							</div>
 						</div>
 						<p class="black">Miles de casos de acoso escolar permanecen ocultos en España. Ni se registran oficialmente ni hay herramientas para que padres, madres y profesorado puedan detectarlo...<br><br/>El acoso escolar, además de afectar a los niños y niñas que lo sufren, destroza su autoestima, su salud, su rendimiento académico y en general, su derecho a crecer felices y sin miedo. <br><br/>En este informe encontrarás soluciones bien claras para lograr #PupitresLibres de acoso escolar e información sobre cuál es la situación del acoso en España. Y lo hacemos público para que tú también lo sepas: el acoso escolar tiene solución. <br><br/><span>Descárgate gratis el informe en un PDF</span> y entérate de lo que sucede en los colegios e institutos de tu alrededor. Solo tienes que rellenar este breve formulario.</p>
-					</div>
-					<!--<img src="<?php echo URL_SITE; ?>images/carteles-interior.png">-->
-				</div>
+						<img src="<?php echo URL_SITE; ?>images/informe-interior.png" alt="informe sobre el acoso escolar" class="informe-interior">
+					</div><!--.columna-contenido-inside-->	
+				</div><!--.columna-contenido-->
 				<div width="100%" height="100%" class="columna-formulario bcolor-white-section">
 					<div style="height:100%" class="cont-formulario-right">
 						<?php #include_once ("includes/descarga-form.php"); ?>

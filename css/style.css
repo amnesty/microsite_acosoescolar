@@ -745,9 +745,9 @@ footer p:nth-of-type(2n){
 
 /*Test popup politica*/
 #test-popup.white-popup {
-    padding: 5px 40px 20px 20px;
+    padding: 50px 40px 20px 20px;
     width: auto;
-    max-width: 550px;
+    max-width:480px;
 }
 #test-popup, #test-popup .form-check, #test-popup .form-check-label{
 	font-size: 14px;
@@ -756,7 +756,7 @@ footer p:nth-of-type(2n){
 }
 
 #test-popup .modal-footer label {
-	margin-top: 15px;
+	margin-top: 20px;
 }
 
 #test-popup .modal-footer label input {
@@ -841,8 +841,7 @@ footer p:nth-of-type(2n){
 #test-popup .mfp-close {
     width: 50px;
     height: 50px;
-    top: -5px;
-    right: 0px;
+    right: 2px;
     opacity: 0.85;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
@@ -1558,7 +1557,7 @@ footer p:nth-of-type(2n){
 	max-width: 65%;
     width: 100%;
     height: 100%;
-    min-height: 701px;
+    /*min-height: 721px;*/
     float: left;
     position: relative;
     color: #000000;

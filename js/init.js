@@ -1,3 +1,8 @@
+/****************** 
+***   VARS      ***
+******************/
+var done = false;
+
 $(document).ready(function() {
 
   /****************** 
@@ -12,8 +17,8 @@ $(document).ready(function() {
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+  setColumnaContenidoHeight();
 
-  setColumnaFormularioHeight();
   moveProgressBar();
 
   //Home owl-carousel
@@ -79,6 +84,7 @@ $(document).ready(function() {
 
   });
 
+
 });//.document ready
 
 
@@ -100,9 +106,8 @@ $(window).scroll(function(event) {
 });//.scroll.function.event
 
 $(window).resize(function() {
-
     //moveProgressBar();
-    setColumnaFormularioHeight();
+    setColumnaContenidoHeight();
 
 });//.window.resize
 
@@ -148,7 +153,7 @@ function onPlayerReady(event) {
     //event.target.playVideo();
 }
 
-var done = false;
+
 function onPlayerStateChange(event) {
 
   var idYouTube =  $('#videocase').data("idyt");
@@ -184,16 +189,22 @@ function send_ga_event(category, action, label) {
     });
 }
 
-// Estabelcer altura en columna formulario/columna contenido
-function setColumnaFormularioHeight () {
+function setColumnaContenidoHeight () {
+  var paddingY =  $(".columna-contenido").outerHeight() - $(".columna-contenido").height();
+  var minHeight = $(window).height() - $("header").innerHeight() - $("footer").innerHeight() - paddingY;
 
+  // Estabelce altura mínima en columna contenido
+  $(".columna-contenido").css ({ 'min-height': minHeight + 'px' });
+
+  // Estabelcer altura en columna formulario/columna contenido
   if (window.matchMedia('(max-width: 980px)').matches) { 
     $(".columna-formulario").css ({ 'height': '100%' });
-
   } else {
     $(".columna-formulario").css ({ 'height': $(".columna-contenido").innerHeight() +'px' });
   }
+
 }
+
 
 function getParameterByName(name, url) {
     if (!url) {

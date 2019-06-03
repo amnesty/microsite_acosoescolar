@@ -12,9 +12,9 @@ $share_fb = 'Yo ya he firmado para llenar todos los colegios de #PupitresLibres 
 $share_tw = 'Una recogida de firmas de @amnistiaespana bien necesaria para conseguir #PupitresLibres de acoso escolar. ¡Me ha encantado!';
 $share_wh = 'Yo ya he firmado para lograr que todos los colegios se llenen de #PupitresLibres de acoso escolar. ¡Súmate tú también!';
 
-$url_share_fb = $page_url . TRACK_FB_UTM;
-$url_share_tw = $page_url . TRACK_TW_UTM;
-$url_share_wh = $page_url . TRACK_WH_UTM;
+$url_share_fb = 'http://bit.ly/2I3Fo5Z';
+$url_share_tw = 'http://bit.ly/2I4WArH';
+$url_share_wh = 'http://bit.ly/2I1jn82';
 
 $caso = $_GET['caso'];
 if($caso) {
@@ -52,14 +52,14 @@ if($caso) {
 			<img src="<?php echo URL_SITE; ?>images/icono-compartir.png">
 			<p class="p-small black">Ahora puedes llegar mucho más lejos y multiplicar tu acción: comparte esta petición en tus redes sociales o en tus grupos de Whatsapp para que más personas de tu entorno firmen la campaña. <br><br/> Cuántos más seamos más fuerza tendremos para llenar los colegios de pupitres libres de acoso escolar.</p>
 			<div class="container-botones-compartir">
-				<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $casos[$caso][2]?> comp FB" data-e_l="<?php echo $casos[$caso][2]?> comp FB" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" class="white bcolor-green-section facebook facebook-share send-piwik-event" href="#">Comparte en facebook</a>
+				<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $casos[$caso][2]?> comp FB" data-e_l="<?php echo $casos[$caso][2]?> comp FB" data-shareurl="<?php echo $url_share_fb; ?>" class="white bcolor-green-section facebook facebook-share send-piwik-event" href="#">Comparte en facebook</a>
 
-				<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $casos[$caso][2]?> comp TW" data-e_l="<?php echo $casos[$caso][2]?> comp TW" data-shareurl="<?php echo urlencode(URL_SITE . TRACK_TW_UTM); ?>" data-texto="<?php echo $share_tw; ?>" class="white bcolor-green-section twitter twitter-share send-piwik-event" href="#">Comparte en twitter</a>
+				<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $casos[$caso][2]?> comp TW" data-e_l="<?php echo $casos[$caso][2]?> comp TW" data-shareurl="<?php echo urlencode($url_share_tw); ?>" data-texto="<?php echo $share_tw; ?>" class="white bcolor-green-section twitter twitter-share send-piwik-event" href="#">Comparte en twitter</a>
 
 <?php
 if($isMobile) {
 ?>					
-				<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $casos[$caso][2]?> comp WH" data-e_l="<?php echo $casos[$caso][2]?> comp WH" data-enlace="<?php echo $page_url; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode($share_wh . ' ' . URL_SITE.TRACK_WH_UTM);?>" class="white bcolor-green-section whatsapp send-piwik-event">Comparte en Whatsapp</a>
+				<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $casos[$caso][2]?> comp WH" data-e_l="<?php echo $casos[$caso][2]?> comp WH" data-enlace="<?php echo $page_url; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode($share_wh . ' ' . $url_share_wh);?>" class="white bcolor-green-section whatsapp send-piwik-event">Comparte en Whatsapp</a>
 <?php
 }
 ?>	

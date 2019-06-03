@@ -173,7 +173,7 @@ if( $_POST['guardar_form'] ) {
 			$purchase = get_purchase_by_member_product($product_id, $member_id);
 
 			// si no existe la purchase, la creamos en experian, junto con el member (crear o actualizar)
-			if($purchase["count"] == 0) {
+			if($purchase["count"] == 0 || $purchase["count"] == '') {
 				$purchase = post_purchase_ai($member_id, $product_id);
 				$purchase_id = $purchase["id"];
 				post_member_purchase_experian($purchase_id, $product_id, $member_id, $email);
@@ -185,7 +185,7 @@ if( $_POST['guardar_form'] ) {
 		// Política
 		if($politika != 'on') {
 			$socio = 3;
-		} 
+		}
 
 		header("location: ../gracias?s=$socio&caso=$caso"); //Añadir &caso=$caso para mostrar en la página de gracias por quién ha firmado
 

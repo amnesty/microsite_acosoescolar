@@ -32,7 +32,7 @@ $num_firmas_total = NUM_FIRMAS_TOTAL; // config.php -> Se puede modificar bajo d
 $num_firmas = ""; // Guardar en esta variable "$num_firmas" el nº de firmas actualziado que se lleva para esta campaña.
 $num_firmas_bd_bak = "1951"; // Numero de firmas de la tabla datos_firmas_backup (83252) + datos_firmas (71331). Pte incorporar a tabla firmas. + firmas recogidas en Facebook (2570+474+1830+733)
 
-if($tabla == 'test_firmas')
+if($tabla == 'firmas')
   $num_firmas_bd_bak = 0;
 
 // contar de la tabla

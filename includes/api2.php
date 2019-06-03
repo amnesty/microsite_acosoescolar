@@ -108,9 +108,9 @@ function do_curl($url, $method, $headers, $postText){
 /************* Obtener TOKEN de Experian ***********************/
 function get_token(){
 
-    $clientId = "23349";
-    $consumerKey = "MjMzNDk6OTc0";
-    $consumerSecret = "345e2121891f4236b229c0e10fe2bfe1";
+    $clientId = "23352";
+    $consumerKey = "MjMzNTI6OTc0";
+    $consumerSecret = "8137078fd3f44434be41c32ce4d63f9f";
 
     // Header
     $headers = array(
@@ -123,7 +123,7 @@ function get_token(){
     $postText = http_build_query($headers);
 
     // URL
-    $url = "https://api.ccmp.eu/services/authorization/oauth2/token";
+    $url = "https://api.ccmp.eu/services2/authorization/oAuth2/Token";
 
     try {
         $res = do_curl($url, "POST", "", $postText);
@@ -169,7 +169,7 @@ function get_product_by_productcode($productcode){
 function get_purchase_by_member_product($product_id, $member_id){
 
     $url = "http://".IP.":".PORT."/api/purchases/?product_id=".$product_id."&member_id=".$member_id;
-    echo $url;
+
     $res = ai_curl($url);
     //var_dump($res);
     return $res["results"];

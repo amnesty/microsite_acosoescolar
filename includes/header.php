@@ -6,7 +6,7 @@
 	<header class="cont-header bcolor-green-section">
 
 <?php
-if (strpos( $_SERVER['PHP_SELF'], 'gracias')) {
+if (strpos( $_SERVER['PHP_SELF'], 'gracias') || strpos( $_SERVER['PHP_SELF'], 'paso-g-2') || strpos( $_SERVER['PHP_SELF'], 'descarga-realizada') ) {
 ?>
 		
 		<div class="cont-header-int grid-container-big padding-20 grid">
@@ -43,6 +43,4 @@ if (strpos( $_SERVER['PHP_SELF'], 'gracias')) {
 <?php
 } 
 ?>
-
-
 	</header><!--.Header-->

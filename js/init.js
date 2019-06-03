@@ -186,7 +186,7 @@ function onPlayerStateChange(event) {
     }            
     // Reproducción 100% Final
     if (event.data == YT.PlayerState.ENDED  && !done_ENDED) {
-      send_ga_event(category, 'Ended', label);
+      send_ga_event(category, 'Reproducir 100%', label);
       done_ENDED = true;
     }  
 

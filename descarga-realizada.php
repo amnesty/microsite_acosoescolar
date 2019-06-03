@@ -6,7 +6,7 @@ $page_title = SITE_TITLE . SEPARATOR . SITE_NAME ;
 $description = '¡Muchas gracias por firmar y defender el derechos de los niños y niñas a disfrutar de un mundo libre de acoso escolar!';
 $img_fb_url = URL_SITE . 'images/social/compartir-fb-generico.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-generico.jpg';
-$page_url = URL_SITE . 'gracias-descarga';
+$page_url = URL_SITE . 'descarga-realizada';
 
 $share_fb = 'Yo ya he firmado para llenar todos los colegios de #PupitresLibres de acoso escolar.';
 $share_tw = 'Una recogida de firmas de @amnistiaespana bien necesaria para conseguir #PupitresLibres de acoso escolar. ¡Me ha encantado!';

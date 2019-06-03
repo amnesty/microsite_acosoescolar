@@ -5,7 +5,6 @@ var done_PLAYING = false;
 var done_PAUSED = false;
 var done_ENDED = false;
 
-
 $(document).ready(function() {
 
   /****************** 
@@ -151,9 +150,6 @@ function onPlayerReady(event) {
 
 function onPlayerStateChange(event) {
 
-  //console.log ( player.getCurrentTime() );
-
-
   var idYouTube =  $('#videocase').data("idyt");
   
   var category =  $('#videocase').data("category");
@@ -161,19 +157,40 @@ function onPlayerStateChange(event) {
   var label =  $('#videocase').data("label");
 
   // 1st PLAY - todos los videos
+  //Ahora Marta Alemany ya no quiere estos eventos :(
+
+  /*  
   if (event.data == YT.PlayerState.PLAYING  && !done_PLAYING) {
     setTimeout (function(){}, 10)
     send_ga_event(category, action, label);
     done_PLAYING = true;
   }
+  */
 
   //Broncano
-  if ('NgHXFTgaVT0' === idYouTube ) {
+  if (label.search('Broncano') != -1) {
+
+    console.log ('Es Broncano')  
+    // 1st PLAY 
+    if (event.data == YT.PlayerState.PLAYING  && !done_PLAYING) {
+      setTimeout (function(){}, 10)
+      send_ga_event(category, action, label);
+      done_PLAYING = true;
+    }
+
     // Puase
     if (event.data == YT.PlayerState.PAUSED  && !done_PAUSED) {
       send_ga_event(category, 'Paused', label);
       done_PAUSED = true;
     }
+
+    // Reproducción 100% Final
+    if (event.data == YT.PlayerState.ENDED  && !done_ENDED) {
+      send_ga_event(category, 'Reproducir 100%', label);
+      done_ENDED = true;
+    }  
+
+    /*
     // Reproducción 5 min
     if (event.data == YT.PlayerState.PLAYING  && !done_PLAYING) {
     }
@@ -183,12 +200,8 @@ function onPlayerStateChange(event) {
     }
     // Reproducción 40 min
     if (event.data == YT.PlayerState.PLAYING  && !done_PLAYING) {
-    }            
-    // Reproducción 100% Final
-    if (event.data == YT.PlayerState.ENDED  && !done_ENDED) {
-      send_ga_event(category, 'Ended', label);
-      done_ENDED = true;
-    }  
+    }       
+    */
 
   }
 }

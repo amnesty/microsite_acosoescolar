@@ -27,6 +27,9 @@ else {
 				</div>
 				<div class="btn">
 					<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $first_string_ga_event;?> boton header firma" data-e_l="<?php echo $first_string_ga_event;?> boton header firma" href="#firma" class="firmar boton black bcolor-yellow send-piwik-event" >Firma</a>
+
+					<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $first_string_ga_event;?> boton header descarga" data-e_l="<?php echo $first_string_ga_event;?> boton header descarga" href="#descarga" class="descargar boton black bcolor-yellow send-piwik-event descargar" >Descarga</a>
+
 					<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $first_string_ga_event;?> boton header socio" data-e_l="<?php echo $first_string_ga_event;?> boton header socio" target="_blank" href="<?php echo URL_SOCIO; ?>" class="socio boton white bcolor-green send-piwik-event" >Hazte socio/a</a>
 				</div>
 			</div>

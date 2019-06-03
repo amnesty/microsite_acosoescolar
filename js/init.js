@@ -71,8 +71,13 @@ $(document).ready(function() {
   //Go To Form
   var capaHeaderHeight = $("header").innerHeight();
   $('.btn-fijo-firma, header .btn .firmar').bind('click', function(event) {
-      event.preventDefault();
-      $('html, body').animate({scrollTop: $(this.hash).offset().top - capaHeaderHeight + 1}, 900);
+    event.preventDefault();
+    $('html, body').animate({scrollTop: $(this.hash).offset().top - capaHeaderHeight + 1}, 900);
+  });
+
+  $('.btn-fijo-descarga, header .btn .descargar').bind('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop: $(this.hash).offset().top - capaHeaderHeight + 1}, 900);
   });
 
   //GA Events

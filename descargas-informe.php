@@ -51,10 +51,12 @@ $caso = 7;
 						<img src="<?php echo URL_SITE; ?>images/informe-interior.png" alt="informe sobre el acoso escolar" class="informe-interior">
 					</div><!--.columna-contenido-inside-->	
 				</div><!--.columna-contenido-->
+				
 				<div width="100%" height="100%" class="columna-formulario bcolor-white-section">
 					<div style="height:100%" class="cont-formulario-right">
 						<?php #include_once ("includes/descarga-form.php"); ?>
-						 <p>Rellena el formulario para recibirlo vía email</p>
+						<p>Rellena el formulario para recibirlo vía email</p>
+						<a name="descarga" id="descarga"></a>
  						<iframe style="height:100%; min-height: 520px;" src="https://crm.es.amnesty.org/descargas-informe"></iframe>
 					</div>
 				</div>

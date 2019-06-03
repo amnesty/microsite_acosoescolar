@@ -383,8 +383,7 @@ footer p:nth-of-type(2n){
 	align-items: center;
 }
 
-
-.firmar{
+.firmar, .descargar {
 	max-width: 120px;
 	width: 120px;
 	padding: 10px 0px 5px 0px;
@@ -404,7 +403,7 @@ footer p:nth-of-type(2n){
     transition-duration: 0.3s;
 }
 
-.firmar:before{
+.firmar:before, .descargar:before {
 	content: "";
     position: absolute;
     z-index: -1;
@@ -433,21 +432,29 @@ footer p:nth-of-type(2n){
     transition-timing-function: ease-out;
 }
 
-.firmar:hover, .firmar:focus, .firmar:active{
+.firmar:hover, .firmar:focus, .firmar:active, .descargar:hover, .descargar:focus, .descargar:active {
 	color: white;
 }
 
 
-.firmar:hover:before, .firmar:focus:before, .firmar:active:before {
+.firmar:hover:before, .firmar:focus:before, .firmar:active:before, .descargar:hover:before, .descargar:focus:before, .descargar:active:before {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-.firmar, .socio a{
+.firmar, .socio a, .descargar{
 	display: inline-block;
 }
 
+.descargar{
+	display: none;
+}
+
+.descargas .descargar{
+	display:  inline-block;
+}
+ 
 .socio{
 	max-width: 120px;
 	width: 120px;
@@ -514,7 +521,7 @@ footer p:nth-of-type(2n){
 	display: none;
 }
 
-.btn-fijo-firma{
+.btn-fijo-firma, .btn-fijo-descarga {
 	font-size: 22px;
 	line-height: 54px;
 	text-align: center;
@@ -530,9 +537,12 @@ footer p:nth-of-type(2n){
 	display: none;
 }
 
-.gracias .btn-fijo-firma, .descargas .btn-fijo-firma{
+
+
+.gracias .btn-fijo-firma, .gracias .btn-fijo-descarga {
 	display: none;
 }
+
 
 /*Modulo Home*/
 
@@ -1183,7 +1193,7 @@ footer p:nth-of-type(2n){
 
 .modulo-acciones-home{
 	position: relative;
-	background-color: lightblue;
+	background-color: #59660a;
 	background-image: url(../images/clase.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -1496,7 +1506,7 @@ footer p:nth-of-type(2n){
 
 .modulo-hazte-socio{
 	position: relative;
-    background-color: lightblue;
+    background-color: #869817;
     background-image: url(../images/banda-socio.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -2396,7 +2406,7 @@ footer{
 		display: none;
 	}*/
 
-	.firmar {
+	.firmar, .descargar, .descargas .descargar  {
 		display: none;
 	}
 
@@ -2407,6 +2417,17 @@ footer{
 
 	.btn-fijo-firma{
 		display: block;
+	}
+	.descargas .btn-fijo-firma{
+		display: none;
+	}
+
+	.descargas .btn-fijo-descarga{
+		display: block;
+	}
+
+	.index .btn-fijo-descarga, .caso-interior .btn-fijo-descarga {
+		display: none;
 	}
 
 	.modulo-broncano-home{
@@ -2457,7 +2478,7 @@ footer{
 		top: 60px!important;
 	}
 
-	.index, .caso-interior, .broncano footer {
+	.index footer, .caso-interior footer, .broncano footer, .descargas footer{
 		margin-bottom: 50px;
 	}
 

@@ -3,7 +3,7 @@ include_once ("includes/config.php");
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = SITE_TITLE . SEPARATOR . SITE_NAME ;
-$description = '¡Muchas gracias por firmar y defender el derechos de los niños y niñas a disfrutar de un mundo libre de acoso escolar!';
+$description = 'Muchas gracias defender el derechos de los niños y niñas a disfrutar de un mundo libre de acoso escolar.';
 $img_fb_url = URL_SITE . 'images/social/compartir-fb-generico.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-generico.jpg';
 $page_url = URL_SITE . 'descarga-realizada';
@@ -58,13 +58,9 @@ if($caso) {
 		<div class="grid-container-small grid">
 			<p class="black"><span>Únete a la familia de Amnistía Internacional</span></p>
 			<p class="black p-small">Sólo con el apoyo de personas como tú podemos trabajar con total independencia y exigir al gobierno español un sistema educativo libre de acoso escolar. <br><br/> Contigo a nuestro lado, podemos conseguir el mundo en el que los niños y niñas disfrutan de su infancia y desarrollan al máximo su potencial y confianza en el futuro.</p>
-			<a target="_blank" class="white bcolor-green" href="<?php echo URL_SOCIO; ?>">Hazte socio/a</a>
-
 			<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="descarga-realizada boton socio" data-e_l="descarga-realizada boton socio" target="_blank" class="white bcolor-green send-piwik-event" href="<?php echo URL_SOCIO; ?>">Hazte socio/a</a>
-
 		</div>
 	</section>
-
 
 </main>
 

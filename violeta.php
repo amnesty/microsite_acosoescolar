@@ -4,7 +4,7 @@ $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'Violeta trabaja contra el acoso escolar dentro de su cole' . SEPARATOR . SITE_TITLE . SEPARATOR . SITE_NAME ;
 $description = 'Violeta forma parte del proyecto de “ayuda entre iguales en su instituto”. Ella, junto a sus compañeros y compañeras, son personas de referencia para quienes están sufriendo acoso escolar y no saben cómo gestionar el problema.';
-$img_fb_url = URL_SITE . 'images/compartir-fb-caso-violeta.jpg';
+$img_fb_url = URL_SITE . 'images/social/compartir-fb-caso-violeta.jpg';
 $img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-violeta.jpg';
 $page_url = URL_SITE . 'violeta';
 

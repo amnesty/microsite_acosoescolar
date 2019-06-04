@@ -2493,3 +2493,24 @@ footer{
 	}
 
 }
+
+@media(max-width: 320px){
+
+	.header-right .social{
+		padding-right: 10px;
+	}
+
+	.socio{
+		max-width: 90px;
+		font-size: 16px;
+	}
+
+	.fa, .fab, .fal, .far, .fas{
+		font-size: 15px;
+	}
+
+	.fa-facebook, .fa-twitter{
+		padding-right: 5px;
+	}
+
+}

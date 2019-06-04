@@ -4,8 +4,8 @@ $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = 'David Broncano ha querido saber qué es la ayuda entre iguales' . SEPARATOR .SITE_TITLE . SEPARATOR . SITE_NAME ;
 $description = 'El presentador David Broncano ha querido saber qué es la ayuda entre iguales y ha entrevistado a varios chicos y chicas que forman parte de esta iniciativa para prevenir y combatir el acoso escolar, en un colegio en El Escorial.';
-$img_fb_url = URL_SITE . 'images/compartir-fb-caso-violeta.jpg';
-$img_tw_url = URL_SITE . 'images/social/compartir-tw-caso-violeta.jpg';
+$img_fb_url = URL_SITE . 'images/social/compartir-fb-broncano.jpg';
+$img_tw_url = URL_SITE . 'images/social/compartir-tw-broncano.jpg';
 $page_url = URL_SITE . 'broncano';
 
 $share_fb = 'David Broncano quiere #PupitresLibres de acoso escolar en los colegios y por eso ha entrevistado a estos chicos. Yo que tú, no me perdía el vídeo.';

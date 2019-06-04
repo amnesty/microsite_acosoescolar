@@ -256,22 +256,18 @@ p span{
 
 ::-webkit-input-placeholder {
 	color: #a0a0a0;
-	/*padding-left: 15px;*/
 }
 
 :-moz-placeholder { /* Firefox 18- */
 	color: #a0a0a0;
-	/*padding-left: 15px;*/
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
 	color: #a0a0a0;
-	/*padding-left: 15px;*/
 }
 
 :-ms-input-placeholder {
 	color: #a0a0a0;
-	/*padding-left: 15px;*/
  }
 
 :focus::-webkit-input-placeholder{
@@ -279,15 +275,11 @@ p span{
 }
 
 select {
-	/*color:#a0a0a0!important;*/
 	padding-left: 15px;
  }
 
 footer{
 	padding: 25px 0;
-	/*position: fixed;
-	bottom: 0;
-	width: 100%;*/
 }
 
 footer a{
@@ -611,7 +603,6 @@ footer p:nth-of-type(2n){
 	max-width: 360px;
 	width: 100%;
 	height: 100%;
-	/*padding-bottom:20px;*/
 	text-align: center;
 	margin: 14px 0;
 }
@@ -630,8 +621,8 @@ footer p:nth-of-type(2n){
 	line-height: 17px;
 	color: #000000;
 	padding-bottom: 15px;
-	/*max-width: 316px;*/
 }
+
 .cont-formulario p.error, .cont-formulario-interior p.error {
 	padding-bottom: 5px;
     padding-top: 0px;
@@ -786,7 +777,6 @@ footer p:nth-of-type(2n){
     color: #ffffff;
     display: block;
     border: none;
-
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -839,11 +829,8 @@ footer p:nth-of-type(2n){
     transform: scaleX(1);
 }
 
-
 #test-popup .modal-footer label span{
 	margin-left: 5px;
-	/*font-size: 16px;
-	line-height: 21px;*/
 }
 
 #test-popup .mfp-close {
@@ -1564,7 +1551,6 @@ footer p:nth-of-type(2n){
 	max-width: 65%;
     width: 100%;
     height: 100%;
-    /*min-height: 721px;*/
     float: left;
     position: relative;
     color: #000000;
@@ -1575,19 +1561,9 @@ footer p:nth-of-type(2n){
 	padding: 0 20px;
 }
 
-/*.columna-contenido img{
-	max-width: 740px;
-	width: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	margin: 0px auto;
-}*/
-
 .columna-formulario{
 	max-width: 35%;
     width: 100%;
-    /*min-height: 701px;*/
     float: left;
     position: relative;
     color: #000000;
@@ -1675,7 +1651,6 @@ footer p:nth-of-type(2n){
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	/*margin-top: 20px;*/
 	margin-bottom: 20px;
 }
 
@@ -1962,7 +1937,6 @@ footer p:nth-of-type(2n){
 		float: none;
 		max-width: 100%;
 		width: 100%;
-		/*min-height: auto;*/
 	}
 
 	.descargas-container{
@@ -1993,16 +1967,19 @@ footer p:nth-of-type(2n){
 	    padding: 20px 0 20px 0;
 	}
 
-
 }
 
-/*
-@media only screen and (min-width: 981px) and (max-width: 1251px){
-
-	.columna-formulario{
-		padding: 22px 0;
+@media only screen and (min-width: 1018px) and (max-width: 1026px){
+	
+	.container-propuestas-col:nth-child(1n), .container-propuestas-col:nth-child(2n), .container-propuestas-col:nth-child(3n), .container-propuestas-col:nth-child(4n){
+		margin-right: 15px;
 	}
-}*/
+
+	.container-propuestas-col:nth-child(5n){
+		margin-right: 0px;
+	}
+}
+
 
 @media only screen and (min-width: 769px) and (max-width: 1042px){
 
@@ -2023,6 +2000,7 @@ footer p:nth-of-type(2n){
 	.container-apoyo img{
 		max-width: 360px;
 	}
+
 }
 
 
@@ -2039,7 +2017,6 @@ footer p:nth-of-type(2n){
 	padding: 8px 8px 3px 8px;
 	font-size: 20px;
 	line-height: 22px;
-
 
 }
 
@@ -2116,13 +2093,6 @@ h2{
 .owl-carousel .owl-dots, .owl-carousel .owl-nav{
 	margin-top: 10px;
 }
-/*
-.owl-carousel .owl-dots .owl-dot span{
-	width: 15px;
-	height: 15px;
-	margin: 5px;
-}
-*/
 
 .testimonios-container-info h3{
 	font-size: 25px;
@@ -2367,10 +2337,6 @@ footer p:nth-of-type(2n){
  	padding-bottom: 15px;
 }
 
-.columna-contenido{
-	/*padding: 22px 0;*/
-}
-
 .m-width{
 	max-width: 100%;
 }
@@ -2388,23 +2354,13 @@ footer{
 }
 
 }
-/*
-@media(max-width: 608px){
 
-	.container-propuestas-col:nth-child(5n){
-		margin-bottom: 0px!important;
-	}
-}*/
 
 @media(max-width: 620px){
 
 	main{
 		margin-top: 60px;
 	}
-
-	/*.firmar, .socio{
-		display: none;
-	}*/
 
 	.firmar, .descargar, .descargas .descargar  {
 		display: none;
@@ -2438,10 +2394,6 @@ footer{
 		background-position: 56% 50%;
 	}
 
-	/*.container-propuestas-col:nth-child(2n), .container-propuestas-col:nth-child(5n){
-		margin-right: 0px;
-	}*/
-
 	.container-donativo img{
 		max-width: 230px;
 	}
@@ -2469,10 +2421,6 @@ footer{
 		background-position: 70% 50%;
 	}
 
-	.columna-contenido img{
-		/*display: none;*/
-	}
-
 	#cookie-law-info-bar{
 		padding: 15px 0 15px!important;
 		top: 60px!important;
@@ -2482,7 +2430,14 @@ footer{
 		margin-bottom: 50px;
 	}
 
+}
 
+@media only screen and (min-width: 401px) and (max-width: 419px){
+
+	.container-propuestas-col:nth-child(2n),
+	.container-propuestas-col:nth-child(4n){
+		margin-right: 0px;
+	}	
 }
 
 
@@ -2508,10 +2463,6 @@ footer{
 
 	.progress-wrap-firmas p{
 		font-size: 22px;
-	}
-
-	.form-check{
-		/*padding-left: 15px;*/
 	}
 
 	.btn-formulario{

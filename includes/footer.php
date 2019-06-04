@@ -1,6 +1,6 @@
 <footer class="bcolor-green-section text-center clear">
   <div class="grid">
-    <p class="white">2019 Amnistía Internacional</p>
+    <p class="white">© 2019 AMNISTÍA INTERNACIONAL ESPAÑA</p>
     <p class="white">Más información sobre el uso de los datos en <a target="_blank" href="https://www.es.amnesty.org/politica-de-privacidad" class="underline" >https://www.es.amnesty.org/politica-de-privacidad</a></p>
   </div>
 </footer>

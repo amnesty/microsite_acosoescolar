@@ -19,7 +19,7 @@ else {
 ?>	
 	<header class="cont-header bcolor-green-section">
 		<div class="cont-header-int grid-container-big padding-20 grid">
-			<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $first_string_ga_event;?> logo header volver_campaña" data-e_l="<?php echo $first_string_ga_event;?> logo header volver_campaña" href="<?php echo URL_SITE; ?>" class="send-piwik-event"><img class="logo" src="<?php echo URL_SITE; ?>images/logo-amnistia.png"></a>
+			<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $first_string_ga_event;?> logo header volver_campaña" data-e_l="<?php echo $first_string_ga_event;?> logo header volver_campaña" href="<?php echo URL_SITE; ?>" class="send-piwik-event"><img class="logo" src="<?php echo URL_SITE; ?>images/logo-ai.svg"></a>
 			<div class="header-right">
 				<div class="header-social">
 					<p class="white">Comparte</p>

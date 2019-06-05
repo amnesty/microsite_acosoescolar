@@ -2494,6 +2494,29 @@ footer{
 
 }
 
+
+@media(max-width: 375px){
+
+	.header-right .social{
+		padding-right: 18px;
+	}
+
+	.socio{
+		max-width: 100px;
+		font-size: 18px;
+	}
+
+	.fa, .fab, .fal, .far, .fas{
+		font-size: 20px;
+	}
+
+	.fa-facebook, .fa-twitter{
+		padding-right: 10px;
+	}
+
+}
+
+
 @media(max-width: 320px){
 
 	.header-right .social{

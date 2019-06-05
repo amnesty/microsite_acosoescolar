@@ -4,7 +4,7 @@
 
 Se añadió la segmentación por casos $segmentacion = $casos[$caso][1];
 */
-
+echo 'hola';
 if( $_POST['guardar_form'] ) {
 
 	// Config
@@ -136,8 +136,8 @@ if( $_POST['guardar_form'] ) {
 							CURRENT_TIMESTAMP,
 							'',
 							'".$ip."',
-							'".$origen.":".$campanya."',
-							'".$origen.":".$campanya."',
+							'".$campanya."',
+							'".$campanya."',
 							'0',
 							'0',
 							CURRENT_TIMESTAMP,
@@ -149,8 +149,15 @@ if( $_POST['guardar_form'] ) {
 							'".$user_agent."'
 						)";
 
-			$dummy = mysqli_query( $id_connect, $query ); //or die( "error!" );
-			mysqli_close($id_connect);
+					#$now = date("Y-m-d h:i:sa");
+					#$txt = $nombre."\t".$apellidos."\t".$email."\t".$telefono."\t".$pais."\t".$politika."\t".$origen.":".$campanya."\t".$ip."\t".$socio."\t".$now."\n";
+					$myfile = fopen("file.txt", "a");
+					fwrite($myfile, $query.'<br>--------------------------------<br>');
+					fclose($myfile);
+
+
+					$dummy = mysqli_query( $id_connect, $query ); //or die( "error!" );
+					mysqli_close($id_connect);
 
 			// Conexión con la API
 
@@ -190,7 +197,8 @@ if( $_POST['guardar_form'] ) {
 		header("location: ../gracias?s=$socio&caso=$caso"); //Añadir &caso=$caso para mostrar en la página de gracias por quién ha firmado
 
 	} catch(Exception $e) {
-		header("location: ../gracias/?error_form=1");
+		echo 'Excepción capturada: ',  $e->getMessage(), "\n";
+		//header("location: ../gracias/?error_form=1");
 	}
 }else {
 	echo "No hay post!";

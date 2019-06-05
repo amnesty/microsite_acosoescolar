@@ -13,8 +13,8 @@ $share_fb = 'Descárgate esta hoja y recoge firmas para lograr #PupitresLibres d
 $share_tw = 'Tú puedes organizar una recogida de apoyos en colegios o institutos para exigir con @amnistiaespana #PupitresLibres de #acosoescolar. ¡Descárgate esta hoja de firmas y que empiece la recogida de firmas!';
 $share_wh = 'Tú puedes organizar una recogida de apoyos en colegios o institutos para exigir con @amnistiaespana #PupitresLibres de #acosoescolar. ¡Descárgate esta hoja de firmas y que empiece la recogida de firmas!';
 
-$url_share_fb = 'http://bit.ly/2I2zoKP';
-$url_share_tw = 'http://bit.ly/2I1mm01';
+$url_share_fb = 'http://bit.ly/2IlbtpU';
+$url_share_tw = 'http://bit.ly/2IlbwSC';
 $url_share_wh = 'http://bit.ly/2HYadZS';
 
 $caso = 10;

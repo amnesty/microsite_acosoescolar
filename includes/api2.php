@@ -176,8 +176,9 @@ function get_purchase_by_member_product($product_id, $member_id){
 }
 
 function get_fecha(){
-  date_default_timezone_set('Europe/Madrid');
-  return date("Y-m-d H:i:s");
+	date_default_timezone_set('Europe/Madrid');
+	return date("Y-m-d H:i:s",strtotime('+2 hours'));
+#  return date("Y-m-d H:i:s");
 }
 
 /************************* POSTs *************************/

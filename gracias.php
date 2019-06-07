@@ -1,5 +1,5 @@
 <?php
-include_once ("includes/config.php"); 
+include_once ("includes/config.php");
 $site_name = SITE_NAME;
 $site_title = SITE_TITLE;
 $page_title = SITE_TITLE . SEPARATOR . SITE_NAME ;
@@ -30,7 +30,7 @@ if($caso) {
 </head>
 <body class="gracias gracias1">
 <!--Header-->
-<?php include_once ("includes/header.php"); ?>
+<?php #include_once ("includes/header.php"); ?>
 
 <?php
     // Pixels de retargetting de FB, Google, Twitter,...
@@ -44,7 +44,7 @@ if($caso) {
 			<p class="p-big black">Por firmar y defender el derechos de los niños y niñas a disfrutar de un mundo libre de acoso escolar.</p>
 		</div>
 	</section>
-	
+
 	<!--Modulo compartir-->
 	<section class="modulo-compartir bcolor-white-section text-center">
 		<div class="grid-container-medium modulo-compartir-inside grid">
@@ -58,11 +58,11 @@ if($caso) {
 
 <?php
 if($isMobile) {
-?>					
+?>
 				<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="<?php echo $casos[$caso][2]?> comp WH" data-e_l="<?php echo $casos[$caso][2]?> comp WH" data-enlace="<?php echo $page_url; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode($share_wh . ' ' . $url_share_wh);?>" class="white bcolor-green-section whatsapp send-piwik-event">Comparte en Whatsapp</a>
 <?php
 }
-?>	
+?>
 			</div>
 			<p class="p-small black">¡No te vayas todavía! Aún puedes hacer mucho más por los niños y niñas que sufren acoso escolar.</p>
 			<a data-e_c="<?php echo EVENT_CATEGORY; ?>" data-e_a="gracias boton continuar" data-e_l="gracias boton continuar" class="bcolor-yellow black continuar-btn send-piwik-event" href="<?php echo URL_SITE; ?>paso-g-2">Continuar</a>

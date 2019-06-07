@@ -67,7 +67,7 @@ function validarFormFirma(f) {
 
     var check = $("#check_reminder");
     var check_reminder_modal = $('#ai-accion-firma__masinfo_reminder');
-    var _paq = _paq || [];
+    var _paq2 = _paq2 || [];
 
     if(!check.prop("checked") && check_reminder_modal.length > 0 && check_reminder_modal.data("shown") != 1) { // in case that exist an reminder_modal div
             $.magnificPopup.open({
@@ -84,7 +84,7 @@ function validarFormFirma(f) {
                     input.prop("checked", false);
                     check.prop("checked", false);
                     $('#test-popup').data("shown", 1);
-                    _paq.push(["trackEvent", "popup_check", "mostrado"]);
+                    _paq2.push(["trackEvent", "popup_check", "mostrado"]);
 
                     /*input.change(function(){
                         var check = $("#ai-accion-firma__masinfo");

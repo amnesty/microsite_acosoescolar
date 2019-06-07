@@ -18,18 +18,18 @@
 
 <!-- Piwik -->
 <script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-  _paq.push(["setCookieDomain", "*.es.amnesty.org"]);
-  _paq.push(["setDomains", ["*.es.amnesty.org",]]);
-  _paq.push(['trackPageView']);
-  _paq.push(['trackVisibleContentImpressions']);
-  _paq.push(['enableLinkTracking']);
-  _paq.push(['MediaAnalytics::removePlayer', 'youtube']);
+  var _paq3 = _paq3 || [];
+  _paq3.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq3.push(["setCookieDomain", "*.es.amnesty.org"]);
+  _paq3.push(["setDomains", ["*.es.amnesty.org",]]);
+  _paq3.push(['trackPageView']);
+  _paq3.push(['trackVisibleContentImpressions']);
+  _paq3.push(['enableLinkTracking']);
+  _paq3.push(['MediaAnalytics::removePlayer', 'youtube']);
   (function() {
     var u="//estadisticas.es.amnesty.org/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '1']);
+    _paq3.push(['setTrackerUrl', u+'piwik.php']);
+    _paq3.push(['setSiteId', '1']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();

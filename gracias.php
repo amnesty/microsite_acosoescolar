@@ -30,7 +30,7 @@ if($caso) {
 </head>
 <body class="gracias gracias1">
 <!--Header-->
-<?php #include_once ("includes/header.php"); ?>
+<?php include_once ("includes/header.php"); ?>
 
 <?php
     // Pixels de retargetting de FB, Google, Twitter,...

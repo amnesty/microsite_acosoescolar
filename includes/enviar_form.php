@@ -62,7 +62,7 @@ if( $_POST['guardar_form'] ) {
 		$result = mysqli_query( $id_connect, $query_existe ); //or die( 'Error: ' . mysqli_connect_errno() );
 		$existe = $result->fetch_array(MYSQLI_ASSOC);
 
-		//nuev@s interesad@s
+		//nuev@s interesad@s: // 0 = interesado, 1 = socio, 2 = nuevo, 3 = Interesado no acepta politica
 		$socio = es_interesado($email);
 
 		// 0 = interesado, 1 = socio
@@ -149,7 +149,6 @@ if( $_POST['guardar_form'] ) {
 						'".$user_agent."'
 					)";
 
-
 					//$myfile = fopen("file.txt", "a");
 					//fwrite($myfile, $query.'<br>--------------------------------<br>');
 					//fclose($myfile);
@@ -188,15 +187,15 @@ if( $_POST['guardar_form'] ) {
 			}
 		}
 		// Política
-		if($politika != 'on') {
-			$socio = 3;
+		if($politika != 'on' && $socio == 2) {
+			$socio = 4;
 		}
 
 		header("location: ../gracias?s=$socio&caso=$caso"); //Añadir &caso=$caso para mostrar en la página de gracias por quién ha firmado
 
 	} catch(Exception $e) {
-		echo 'Excepción capturada: ',  $e->getMessage(), "\n";
-		//header("location: ../gracias/?error_form=1");
+		//echo 'Excepción capturada: ',  $e->getMessage(), "\n";
+		header("location: ../gracias/?error_form=1");
 	}
 }else {
 	echo "No hay post!";

@@ -138,13 +138,17 @@ function es_interesado($email) {
 
     $member = get_member_by_email($email)[0];
 
-    // 0 = interesado, 1 = socio, 2 = nuevo
+    // 0 = interesado, 1 = socio, 2 = nuevo, 3 = Interesado no acepta politica
     $essocio = 2;
     if( isset($member["id"]) ){
       if($member["crm_id"] > 0){
         $essocio = 1;
       } else {
-        $essocio = 0;
+        if ($member["no_fundraising"] <> 1){
+          $essocio = 0;
+        } else {
+          $essocio = 3;
+        }
       }
     }
     return $essocio;

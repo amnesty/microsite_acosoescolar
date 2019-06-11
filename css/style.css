@@ -1761,6 +1761,38 @@ footer p:nth-of-type(2n){
     padding-bottom: 15px;
 }
 
+/*LightGallert PopUP*/
+
+.lg-item, .lg-inner, .lg-toolbar {
+	background: #f2f4e7;
+}
+
+.lg-toolbar .lg-icon {
+	color: #59660a;
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    line-height: 30px;
+}
+.lg-toolbar .lg-icon:hover {
+	color: #000;
+}
+
+.lg-video, .lg-outer .lg-video{
+	background: #FFF;
+	opacity: 1;
+	width: 80%;
+	height: 100%;
+    margin: auto;
+}
+
+.lg-video-cont {
+	height: 90%;
+}
+
+#lg-counter {
+	display: none;
+}
 
 /*Responsive*/
 

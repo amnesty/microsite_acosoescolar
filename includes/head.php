@@ -37,14 +37,17 @@
     <meta name="twitter:image:alt" content="<?php echo $site_name; ?>" />
     <!-- CSS-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i|Teko:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.5/css/lightgallery.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?php echo URL_SITE; ?>css/cli-style.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo URL_SITE; ?>css/style.css">
 	<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
 	<!-- Scritps-->
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="<?php echo URL_SITE; ?>js/cookielawinfo.js"></script>
+	<script type="text/javascript" src="<?php echo URL_SITE; ?>js/lightgallery-all.min.js"></script>
 	<script type="text/javascript" src="<?php echo URL_SITE; ?>js/init.js"></script>
 	<script type="text/javascript" src="<?php echo URL_SITE; ?>js/firma_form.js"></script>
 	<!-- Google Tag Manager -->

@@ -7,6 +7,21 @@ var done_ENDED = false;
 
 $(document).ready(function() {
 
+  $('#open-website').lightGallery({
+    selector: 'this',
+    getCaptionFromTitleOrAlt: false,
+    share: false,
+    googlePlus: false,
+    pinterest: false,
+    whatsapp: false,
+    hash: true,
+    zoom: false,
+    download: false,
+    fullScreen: false,
+    autoplayControls: false,
+    iframeMaxWidth: '100%'
+  });
+
   /****************** 
   *** API YOUTUBE ***
   ******************/

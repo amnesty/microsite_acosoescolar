@@ -1763,6 +1763,9 @@ footer p:nth-of-type(2n){
 
 /*LightGallert PopUP*/
 
+#open-website {
+	cursor: pointer;
+}
 .lg-item, .lg-inner, .lg-toolbar {
 	background: #f2f4e7;
 }

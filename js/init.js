@@ -7,7 +7,7 @@ var done_ENDED = false;
 
 $(document).ready(function() {
 
-  $('#open-website').lightGallery({
+  $('.open-website').lightGallery({
     selector: 'this',
     getCaptionFromTitleOrAlt: false,
     share: false,

@@ -199,7 +199,7 @@ $progress_percent = (($num_firmas_bd_bak+$num_firmas) / $num_firmas_total)*100;
 			</div>
       <div class="form-check">
         <label class="form-check-label">
-          <span>Al participar aceptas la <a data-iframe="true" id="open-website" data-src="https://www.es.amnesty.org/politica-de-privacidad" title="Política de privacidad">Política de Privacidad</a></span>
+          <span>Al participar aceptas la <a data-iframe="true" class="open-website" data-src="https://www.es.amnesty.org/politica-de-privacidad" title="Política de privacidad">Política de Privacidad</a></span>
         </label>
       </div>
 			<!-- POPUP Politica-->

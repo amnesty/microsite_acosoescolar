@@ -30,6 +30,7 @@ if ( isset($_GET['utm_campaign']) || isset($_GET['pk_kwd']) ){
 <?php
 $num_firmas_total = NUM_FIRMAS_TOTAL; // config.php -> Se puede modificar bajo demanda. Establecido a 5000
 $num_firmas = ""; // Guardar en esta variable "$num_firmas" el nº de firmas actualziado que se lleva para esta campaña.
+$num_firmas_fb = "196";
 $num_firmas_bd_bak = "1951"; // Numero de firmas de la tabla datos_firmas_backup (83252) + datos_firmas (71331). Pte incorporar a tabla firmas. + firmas recogidas en Facebook (2570+474+1830+733)
 
 if($tabla == 'firmas')
@@ -47,7 +48,7 @@ $num_firmas = $obj->contador;
 mysqli_close($id_connect);
 
 //Calculo del porcentajo de firmas que llevamos:
-$progress_percent = (($num_firmas_bd_bak+$num_firmas) / $num_firmas_total)*100;
+$progress_percent = (($num_firmas_bd_bak+$num_firmas+$num_firmas_fb) / $num_firmas_total)*100;
 ?>
 
   <!--Formulario Firma INICIO-->
@@ -55,7 +56,7 @@ $progress_percent = (($num_firmas_bd_bak+$num_firmas) / $num_firmas_total)*100;
     <p>Firma para exigir al gobierno y a las comunidades autónomas que creen un sistema de denuncias que los y las adolescentes utilicen de verdad, y que alumnos, alumnas y profesorado sean formados para prevenir e intervenir ante casos de acoso escolar.</p>
 
     <div class="progress-wrap-firmas progress-firmas" data-progress-percent="<?php echo $progress_percent;?>">
-      <p>Llevamos <span><?php echo number_format($num_firmas_bd_bak+$num_firmas, 0, ',', '.');?></span> firmas</p>
+      <p>Llevamos <span><?php echo number_format($num_firmas_bd_bak+$num_firmas+$num_firmas_fb, 0, ',', '.');?></span> firmas</p>
       <div class="progress-bar-firmas progress-firmas"></div>
     </div>
 

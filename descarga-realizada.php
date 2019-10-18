@@ -27,6 +27,10 @@ if($caso) {
 <html lang="es">
 <?php include_once ("includes/head.php"); ?>
 <body class="gracias gracias-descarga">
+<!--Código para que no salga dentro del iframe-->
+<script>
+if (top != self) top.location.href = location.href;
+</script>
 <!--Header-->
 <?php include_once ("includes/header.php"); ?>
 <?php

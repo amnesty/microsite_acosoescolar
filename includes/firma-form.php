@@ -31,7 +31,7 @@ if ( isset($_GET['utm_campaign']) || isset($_GET['pk_kwd']) ){
 $num_firmas_total = NUM_FIRMAS_TOTAL; // config.php -> Se puede modificar bajo demanda. Establecido a 5000
 $num_firmas = ""; // Guardar en esta variable "$num_firmas" el nº de firmas actualziado que se lleva para esta campaña.
 $num_firmas_fb = "638";
-$num_firmas_bd_bak = "4758"; //. Pte incorporar a tabla firmas. + firmas recogidas en Facebook (1951+93+1051+324+793+546)
+$num_firmas_bd_bak = "4886"; //. Pte incorporar a tabla firmas. + firmas recogidas en Facebook (1951+93+1051+324+793+546+128)
 
 if($tabla == 'firmas')
   $num_firmas_bd_bak = 0;

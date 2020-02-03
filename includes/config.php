@@ -39,7 +39,7 @@ if ( strpos ( $_SERVER['SERVER_NAME'], "estresarte.com" )) {
 
 //Para calcular el valor, es necesario sabnerl el nº de firmas que se llevan en cada momento, meidante una consulta SQL a la base de datos.
 //Luego se calucla esto: data-progress-percent =   (nº firmas / NUM_FIRMAS_TOTAL )*100
-define ("NUM_FIRMAS_TOTAL", "30000");
+define ("NUM_FIRMAS_TOTAL", "50000");
 
 //Definde Constates Site Name Y Site Title
 define("SITE_NAME", "Amnistía Internacional");

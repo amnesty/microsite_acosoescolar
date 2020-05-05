@@ -28,7 +28,7 @@ function validarFormFirma(f) {
 
     f.email.focus();
     error = 1;
-  }else if (f.email.value.search(/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.[a-z]{2,}$/i) == -1) {
+  }else if (f.email.value.trim().search(/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.[a-z]{2,}$/i) == -1) {
 
     $(".error.email").html("Email con formato incorrecto.");
     $(".error.email").css('visibility', 'visible');

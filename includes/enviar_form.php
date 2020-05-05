@@ -17,10 +17,10 @@ if( $_POST['guardar_form'] ) {
 
 	extract($_POST);
 
-	$nombre = $_POST['nombre'];
-	$apellidos = $_POST['apellidos'];
-	$email = $_POST['email'];
-	$telefono = $_POST['telefono'];
+	$nombre = trim($_POST['nombre']);
+	$apellidos = trim($_POST['apellidos']);
+	$email = trim($_POST['email']);
+	$telefono = trim($_POST['telefono']);
 	$pais_id = $_POST['pais'];
 	$politika = $_POST['politica'];
 	$origen = $_POST['origen'];

@@ -57,7 +57,8 @@
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-5JHK4F4');</script>
 	<!-- End Google Tag Manager -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	<!--
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129198217-1"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
@@ -66,6 +67,7 @@
 
 	gtag('config', 'UA-129198217-1', { 'optimize_id': 'GTM-WM7GM4Z'});
 	</script>
+        -->
 	<script type="text/javascript">
 <?php
 		if($isMobile) {

@@ -79,10 +79,10 @@ $(document).ready(function() {
   });
 
   //Cookie bar
-  cli_show_cookiebar({
+/*  cli_show_cookiebar({
     settings: '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#869817","border_on":true,"button_1_button_colour":"#869817","button_1_button_hover":"#869817","button_1_link_colour":"#fff","button_1_as_button":true,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#869817","button_2_as_button":false,"header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"top","scroll_close":false,"scroll_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#838383","show_once_yn":false,"show_once":"10000"}'
   });
-
+*/
   //Go To Form
   var capaHeaderHeight = $("header").innerHeight();
   $('.btn-fijo-firma, header .btn .firmar').bind('click', function(event) {
@@ -116,7 +116,7 @@ $(window).scroll(function(event) {
   var docheight = $(document).height();
   var totalScroll = (wintop/(docheight-winheight))*100;
   $(".KW_progressBar").css("width",totalScroll+"%");
-
+/*
   //Crear cookie al hacer scroll
   if(!existeCookie('cookieAlert3')) {
       crearCookie('cookieAlert3', '1', 365, '.es.amnesty.org');
@@ -124,7 +124,7 @@ $(window).scroll(function(event) {
   }
   //Cerrar Aviso de cookies al hacer scroll
   jQuery('#cookie-law-info-bar').fadeOut();
-
+*/
 });//.scroll.function.event
 
 $(window).resize(function() {
@@ -283,7 +283,7 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-
+/*
 function crearCookie(name,value,days,domain) {
     //console.log("--> Nombre: "+name+" Valor: "+value+" Dias: "+days);
     if (days) {
@@ -310,7 +310,7 @@ function existeCookie(name) {
   }
   return false;
 }
-
+*/
 function callbackOwl(event) {
     // Provided by the core
     var page = event.page.index;     // Position of the current page

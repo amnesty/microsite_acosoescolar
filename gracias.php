@@ -87,7 +87,7 @@ if($isMobile) {
 <?php #include_once ("includes/footer.php"); ?>
 
 
-    <!-- Piwik -->
+    <!-- Matomo -->
     <script type="text/javascript">
         var nuevoFirmante = <?php echo $_GET['s']; ?>;
         var casoPiwik = <?php echo $_GET['caso']; ?>;
@@ -97,56 +97,40 @@ if($isMobile) {
         _paq.push(["setCookieDomain", "*.es.amnesty.org"]);
         _paq.push(["setDomains", ["*.es.amnesty.org",]]);
 
+        /*cookie consent*/
+        _paq.push(['requireCookieConsent']);
 
-        // definimos custom events para cada caso
-        /*
-        if (casoPiwik == 1) {
-            _paq.push(['setCustomDimension', 4, 'Antonio']);
-        } else if (casoPiwik == 2) {
-            _paq.push(['setCustomDimension', 4, 'Rosa']);
-        } else if (casoPiwik == 3) {
-            _paq.push(['setCustomDimension', 4, 'Jaime']);
-        } else if (casoPiwik == 4) {
-            _paq.push(['setCustomDimension', 4, 'Soledad']);
-        } else {
-            _paq.push(['setCustomDimension', 4, 'general']);
-        }
-        */
+         document.addEventListener('trackPage', function(){
 
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
+		_paq.push(['trackPageView']);
 
-        // marcamos los goals, tanto geneŕicos como especiales de la micro
-        _paq.push(["trackGoal", 6]);
-        _paq.push(["trackGoal", 33]);
-        if (nuevoFirmante == 2) {
-            _paq.push(["trackGoal", 8]);
-        }
+		stats_allowed = document.cookie.search(/omCookieConsent=[^;]+group-1.1/) > -1? 1: 0;
+		/*cookie consent*/
+		if(stats_allowed === 1){
+		    _paq.push(['setCookieConsentGiven']);
+		} else {
+		    _paq.push(['forgetCookieConsentGiven']);
+		}
 
-        // Lanzamos eventos para cada caso
-        /*
-        if (casoPiwik == 1) {
-            _paq.push(['trackEvent', 'FormJusticia', 'Gracias Antonio']);
-        } else if (casoPiwik == 2) {
-            _paq.push(['trackEvent', 'FormJusticia', 'Gracias Rosa']);
-        } else if (casoPiwik == 3) {
-            _paq.push(['trackEvent', 'FormJusticia', 'Gracias Jaime']);
-        } else if (casoPiwik == 4) {
-            _paq.push(['trackEvent', 'FormJusticia', 'Gracias Soledad']);
-        } else {
-            _paq.push(['trackEvent', 'FormJusticia', 'Gracias general']);
-        }
-        */
+		_paq.push(['enableLinkTracking']);
 
-        (function() {
-            var u="//estadisticas.es.amnesty.org/piwik/";
-            _paq.push(['setTrackerUrl', u+'piwik.php']);
-            _paq.push(['setSiteId', '1']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-        })();
+		// marcamos los goals, tanto geneŕicos como especiales de la micro
+		_paq.push(["trackGoal", 6]);
+		_paq.push(["trackGoal", 33]);
+		if (nuevoFirmante == 2) {
+		    _paq.push(["trackGoal", 8]);
+		}
+
+		(function() {
+		    var u="//estadisticas.es.amnesty.org/piwik/";
+		    _paq.push(['setTrackerUrl', u+'matomo.php']);
+		    _paq.push(['setSiteId', '1']);
+		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		})();
+        });
     </script>
-    <noscript><p><img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    <noscript><p><img src="//estadisticas.es.amnesty.org/piwik/matomo.php?idsite=1" style="border:0;" alt="" /></p></noscript>
     <!-- End Piwik Code -->
 
 </body>

@@ -6,8 +6,14 @@ Se cambió: where accion = 'pupitres_libres' por: where accion LIKE 'pupitres_li
 porque tendremos la segementación por casos por quién firman
 */?>
 
-		<link rel="stylesheet" href="<?php echo URL_SITE; ?>js/magnific-popup/dist/magnific-popup.css">
+<!--		<link rel="stylesheet" href="<?php echo URL_SITE; ?>js/magnific-popup/dist/magnific-popup.css">
 		<script type="text/javascript" src="<?php echo URL_SITE; ?>js/magnific-popup/dist/jquery.magnific-popup.js"></script>
+-->
+
+
+<!--    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script> -->
+
+
 		<script type="text/javascript" src="<?php echo URL_SITE; ?>js/politica.js"></script>
 
 
@@ -204,6 +210,7 @@ $progress_percent = (($num_firmas_bd_bak+$num_firmas+$num_firmas_fb) / $num_firm
         </label>
       </div>
 			<!-- POPUP Politica-->
+   <!--   
 			<div id="test-popup" class="modal-dialog mfp-hide white-popup mfp-hide" role="document">
 					<div class="modal-content">
 						<div class="modal-body form-check">
@@ -213,11 +220,11 @@ $progress_percent = (($num_firmas_bd_bak+$num_firmas+$num_firmas_fb) / $num_firm
 									<label class="ai-accion-firma__check bigger form-check-label">
 											<input type="checkbox" id="ai-accion-firma__masinfo_reminder" class="form-check-input" style="display:none"/>
 											<button type="checkbox" id="ai-accion-firma__masinfo_button" class="form-check-input">Sí quiero</button>
-											<!--<span>Quiero recibir acciones para cambiar el mundo</span>-->
 									</label>
 						</div>
 					</div>
 			</div>
+      -->
 			<!--END POPUP Politica -->
       <div class="box-check">
         <button id="btnEnviar" type="button" class="btn-formulario boton bcolor-yellow black"  onclick="validarFormFirma(document.forms['formFirma']);">Firma</button>

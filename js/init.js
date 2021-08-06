@@ -7,6 +7,7 @@ var done_ENDED = false;
 
 $(document).ready(function() {
 
+  /*
   $('.open-website').lightGallery({
     selector: 'this',
     getCaptionFromTitleOrAlt: false,
@@ -21,6 +22,9 @@ $(document).ready(function() {
     autoplayControls: false,
     iframeMaxWidth: '100%'
   });
+*/
+
+
 
   /****************** 
   *** API YOUTUBE ***

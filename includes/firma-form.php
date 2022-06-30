@@ -1,4 +1,10 @@
   <!--Texto de cierre de las firmas-->
+<style>.cont-formulario p {
+font-size: 18px;
+line-height: 23px;
+}
+</style>
+
   <div class="cont-formulario-int">
     <p class="p-big black semibold">Esta acción ha finalizado. Hemos sido 31.203 firmantes.</p>
 

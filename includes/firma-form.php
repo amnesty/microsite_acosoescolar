@@ -1,5 +1,5 @@
   <!--Texto de cierre de las firmas-->
-<style>.cont-formulario p {
+<style>.cont-formulario p, .cont-formulario-interior p{
 font-size: 18px;
 line-height: 23px;
 }

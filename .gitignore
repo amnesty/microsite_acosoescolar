@@ -3,3 +3,7 @@ includes/connect.php
 # includes/test_connection.php
 # includes/file.txt
 .htaccess
+*~
+*copia*
+*bak
+*zip

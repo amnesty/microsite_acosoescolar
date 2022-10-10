@@ -36,7 +36,7 @@ $caso = 4;
 				<div class="columna-contenido bcolor-grey-section">
 					<div class="columna-contenido-inside">
 						<div class="titulo-redes-container">
-							<h2 class="black m-width">Violeta</h2>
+							<h1 class="black m-width">Violeta</h1>
 							<div class="compartir-columna-contenido">
 								<p class="green p-super-small">Comparte</p>
 <?php include ("includes/social_share_interior.php"); ?>

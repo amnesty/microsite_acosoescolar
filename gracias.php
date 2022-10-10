@@ -40,7 +40,7 @@ if($caso) {
 	<!--Modulo gracias-->
 	<section class="modulo-gracias bcolor-grey-section text-center">
 		<div class="grid-container-small grid">
-			<h2 class="black">¡Muchas gracias!</h2>
+			<h1 class="black">¡Muchas gracias!</h1>
 			<p class="p-big black">Por firmar y defender el derechos de los niños y niñas a disfrutar de un mundo libre de acoso escolar.</p>
 		</div>
 	</section>

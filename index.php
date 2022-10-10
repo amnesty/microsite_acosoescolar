@@ -33,7 +33,8 @@ $caso = 0;
 	<main>
 		<!--Modulo cabecera-->
 		<section class="modulo-home">
-			<h1 style="text-indent:-99999px; background: url(<?php echo URL_SITE; ?>images/cabecera_mobile_300.jpg); display: block;"><?php echo $site_title;?></h1>
+			<h1 style="display:none;"><?php echo $site_title;?></h1>
+                        <img src="<?php echo URL_SITE; ?>images/cabecera_mobile_300.jpg" alt="<?php echo $site_title;?>">
 			<div class="modulo-home-inside grid-container-big grid">
 				<div class="cont-formulario">
 <?php include_once ("includes/firma-form.php"); ?>
